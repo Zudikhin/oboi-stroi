@@ -1,0 +1,76 @@
+.os_body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.os_button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  -webkit-tap-highlight-color: transparent;
+}
+.os_button:focus {
+  outline: none;
+  border: none;
+}
+.os_a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Roboto-Regular";
+  letter-spacing: 0.2px;
+}
+.os_span {
+  font-family: "Roboto-Regular";
+  letter-spacing: 0.2px;
+  -webkit-tap-highlight-color: transparent;
+}
+.os_a:hover {
+  text-decoration: none;
+}
+.os_ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  & li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.os_input {
+  border: none;
+}
+.os_input:focus {
+  outline: none;
+}
+.os_p {
+  margin: 0px;
+  font-family: "Roboto-Regular";
+  letter-spacing: 0.2px;
+}
+.os_h {
+  margin: 0px;
+  font-family: "Roboto-Regular";
+  letter-spacing: 0.2px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.os_container {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  @media (min-width: 768px) {
+    max-width: 1600px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @media (min-width: 1664px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

@@ -1,0 +1,41 @@
+.os_features {
+  &_list {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &_item {
+      position: relative;
+      padding-left: 18px;
+      margin-top: 16px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: #29c1d5;
+        left: 0;
+        top: 0;
+      }
+      & h4 {
+        font-family: "Roboto-Bold";
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-color;
+        & a {
+          color: $black-color;
+          margin-right: 4px;
+          text-decoration: underline;
+        }
+      }
+      & p {
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-color;
+      }
+      @media (min-width: 768px) {
+        flex: 1;
+        margin-right: 16px;
+      }
+    }
+  }
+}

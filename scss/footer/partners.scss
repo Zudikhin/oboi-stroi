@@ -1,0 +1,101 @@
+.os_partners {
+  background-color: #f4f5f5;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  @media (min-width: 768px) {
+    padding-bottom: 16px;
+  }
+  @media (min-width: 1024px) {
+    padding-bottom: 32px;
+  }
+  & h3 {
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    line-height: 24px;
+    color: $black-color;
+    padding-top: 16px;
+    @media (min-width: 1024px) {
+      padding-top: 32px;
+    }
+  }
+  &_slider {
+    margin-top: 16px;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    & .slick-track {
+      display: flex;
+      align-items: center;
+    }
+    & .slick-dots {
+      position: absolute;
+      bottom: -22px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      & li {
+        padding: 0;
+        width: 8px;
+        height: 8px;
+        margin: 0px 4px;
+        cursor: pointer;
+        position: relative;
+        & button {
+          border: none;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          font-size: 0;
+          line-height: 0;
+          border-radius: 50%;
+          background-color: white;
+          cursor: pointer;
+        }
+        &.slick-active {
+          & button {
+            background-color: #29c1d5;
+          }
+        }
+      }
+    }
+
+    &_item {
+      & img {
+        width: 128px;
+        margin: 0 auto;
+        opacity: 0.4;
+      }
+    }
+  }
+  &_list {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 16px;
+    }
+    @media (min-width: 1366px) {
+      justify-content: space-around;
+    }
+    &_item {
+      margin-right: 32px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      & img {
+        width: 100%;
+        opacity: 0.4;
+      }
+    }
+  }
+}

@@ -1,0 +1,323 @@
+.os_footer {
+  & .os_container {
+    padding-left: 0px;
+    padding-right: 0px;
+    @media (min-width: 768px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  &_mob {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  &_mob_top {
+    background-color: #394a50;
+    &_accordion {
+      &_title {
+        position: relative;
+        height: 40px;
+        border-bottom: 1px solid white;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        & h4 {
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: $white-color;
+          padding: 0px 16px;
+          position: relative;
+          width: 100%;
+          &:after {
+            content: "";
+            position: absolute;
+            right: 16px;
+            top: 4px;
+            width: 16px;
+            height: 16px;
+            background-image: url(../../img/arrow-white.svg);
+            transform: rotate(0deg);
+            transition: all 0.2s linear;
+          }
+        }
+      }
+      &_drop {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.2s linear;
+        border-bottom: 1px solid white;
+        transform: translateY(-1px);
+        & ul {
+          box-sizing: border-box;
+          padding: 16px;
+          & li {
+            margin-top: 16px;
+            &:first-child {
+              margin-top: 0px;
+            }
+            & a {
+              font-size: 14px;
+              line-height: 21px;
+              color: $grey-color;
+            }
+          }
+        }
+        &_item {
+          display: flex;
+          flex-direction: column;
+          padding: 16px;
+          &:last-child {
+            padding: 0px 16px 16px 16px;
+          }
+          & p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $grey-color;
+          }
+          & a {
+            font-size: 14px;
+            line-height: 21px;
+            color: $white-color;
+            margin-top: 16px;
+          }
+        }
+      }
+      &.active {
+        & .os_footer_mob_top_accordion_drop {
+          max-height: 240px;
+          transition: max-height 0.2s linear;
+        }
+        & .os_footer_mob_top_accordion_title {
+          & h4 {
+            &:after {
+              transform: rotate(-180deg);
+              transition: all 0.2s linear;
+            }
+          }
+        }
+      }
+    }
+    &_show {
+      padding: 16px;
+      box-sizing: border-box;
+      & p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $white-color;
+      }
+      & span {
+        display: block;
+        font-size: 14px;
+        line-height: 21px;
+        color: $grey-color;
+        padding: 8px 0px;
+      }
+    }
+    &_links {
+      box-sizing: border-box;
+      padding: 16px 16px 32px 16px;
+      & h4 {
+        font-size: 14px;
+        line-height: 21px;
+        color: $white-color;
+      }
+      & ul {
+        display: flex;
+        margin-top: 8px;
+        & li {
+          margin-right: 16px;
+        }
+      }
+      &_yandex {
+        margin-top: 32px;
+      }
+    }
+  }
+  &_mob_bottom {
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    &_payment {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+      &_item {
+        margin-right: 16px;
+      }
+    }
+    &_tagline {
+      margin-top: 32px;
+      & p {
+        font-size: 12px;
+        line-height: 18px;
+        color: $black-color;
+        text-align: center;
+        & a {
+          color: $black-color;
+        }
+      }
+    }
+    &_secure {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+    }
+  }
+  &_desk {
+    box-sizing: border-box;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+    &_top {
+      background-color: #394a50;
+      &_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 32px 0px;
+        &_item {
+          width: 30%;
+          @media (min-width: 1024px) {
+            width: 15%;
+          }
+          @media (min-width: 1366px) {
+            width: 14%;
+          }
+          & h4 {
+            font-size: 14px;
+            line-height: 21px;
+            color: $white-color;
+          }
+          & ul {
+            & li {
+              margin-top: 16px;
+              & a {
+                font-size: 14px;
+                line-height: 21px;
+                color: $grey-color;
+                transition: all 0.2s linear;
+                &:hover {
+                  color: $white-color;
+                  transition: all 0.2s linear;
+                }
+              }
+            }
+          }
+        }
+        &_contacts {
+          width: 30%;
+          margin-top: 32px;
+          display: flex;
+          flex-direction: column;
+          @media (min-width: 1024px) {
+            width: 15%;
+            margin-top: 0px;
+          }
+          @media (min-width: 1366px) {
+            width: 14%;
+          }
+          & h4 {
+            font-size: 14px;
+            line-height: 21px;
+            color: $white-color;
+          }
+          & p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $grey-color;
+            opacity: 0.5;
+            margin-top: 16px;
+          }
+          & a {
+            font-size: 14px;
+            line-height: 21px;
+            color: $white-color;
+            margin-top: 8px;
+          }
+        }
+        &_show {
+          width: 30%;
+          margin-top: 32px;
+          @media (min-width: 1024px) {
+            width: 15%;
+            margin-top: 0px;
+          }
+          @media (min-width: 1366px) {
+            width: 13%;
+          }
+          & h4 {
+            font-size: 14px;
+            line-height: 21px;
+            color: $white-color;
+          }
+          & span {
+            font-size: 14px;
+            line-height: 21px;
+            color: $grey-color;
+            margin: 8px 0px;
+            display: block;
+          }
+          & p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $white-color;
+          }
+        }
+        &_links {
+          width: 30%;
+          margin-top: 32px;
+          @media (min-width: 1024px) {
+            width: 15%;
+            margin-top: 0px;
+          }
+          @media (min-width: 1366px) {
+            width: 14%;
+          }
+          & h4 {
+            font-size: 14px;
+            line-height: 21px;
+            color: $white-color;
+          }
+          & ul {
+            display: flex;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+            & li {
+              margin-top: 8px;
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+    }
+    &_bottom {
+      padding: 16px 0px;
+      &_content {
+        display: flex;
+        justify-content: space-between;
+        &_secure {
+          display: flex;
+          align-items: center;
+          & p {
+            font-size: 12px;
+            line-height: 18px;
+            color: $black-color;
+            margin-left: 26px;
+            & a {
+              color: $black-color;
+            }
+          }
+        }
+        &_payment {
+          display: flex;
+          &_item {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+}
