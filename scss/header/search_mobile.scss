@@ -38,6 +38,7 @@
           top: 50%;
           -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+          background-repeat: no-repeat;
           background: url(../../img/header/header_desktop/search.svg);
         }
         &.focus {

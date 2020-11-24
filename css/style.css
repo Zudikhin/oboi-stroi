@@ -1228,6 +1228,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  background-repeat: no-repeat;
   background: url(../../img/header/header_desktop/search.svg); }
 
 .os_search_mobile_content_form form.focus {
@@ -3789,7 +3790,7 @@
 .os_shop_content_block_main_catalog_list.photo .os_shop_content_block_main_catalog_list_item_block .os_bottom {
   display: block;
   position: absolute;
-  bottom: -50px;
+  bottom: -55px;
   left: 0px;
   width: 100%;
   z-index: 2;
@@ -4779,8 +4780,15 @@
   line-height: 18px;
   color: #394a50; }
 
+.os_shop_content_block_main_catalog_list.list .os_shop_content_block_main_catalog_list_item.open .os_shop_content_block_main_catalog_list_item_block .os_top_info_order_tooltip {
+  margin-left: 8px; }
+
 .os_shop_content_block_main_catalog_list.list .os_shop_content_block_main_catalog_list_item.open .os_shop_content_block_main_catalog_list_item_block .os_top_info_order_tooltip_block {
-  display: block; }
+  display: none; }
+
+@media (min-width: 768px) {
+  .os_shop_content_block_main_catalog_list.list .os_shop_content_block_main_catalog_list_item.open .os_shop_content_block_main_catalog_list_item_block .os_top_info_order_tooltip_block {
+    display: block; } }
 
 .os_shop_content_block_main_catalog_list.list .os_shop_content_block_main_catalog_list_item.open .os_shop_content_block_main_catalog_list_item_block .os_top_info_order_tooltip_block p {
   font-family: "Roboto-Regular";
@@ -4800,8 +4808,15 @@
   line-height: 18px;
   color: #394a50; }
 
+.os_shop_content_block_main_catalog_list.list .os_shop_content_block_main_catalog_list_item.open .os_shop_content_block_main_catalog_list_item_block .os_top_info_wait_tooltip {
+  margin-left: 8px; }
+
 .os_shop_content_block_main_catalog_list.list .os_shop_content_block_main_catalog_list_item.open .os_shop_content_block_main_catalog_list_item_block .os_top_info_wait_tooltip_block {
-  display: block; }
+  display: none; }
+
+@media (min-width: 768px) {
+  .os_shop_content_block_main_catalog_list.list .os_shop_content_block_main_catalog_list_item.open .os_shop_content_block_main_catalog_list_item_block .os_top_info_wait_tooltip_block {
+    display: block; } }
 
 .os_shop_content_block_main_catalog_list.list .os_shop_content_block_main_catalog_list_item.open .os_shop_content_block_main_catalog_list_item_block .os_top_info_wait_tooltip_block p {
   font-family: "Roboto-Regular";
