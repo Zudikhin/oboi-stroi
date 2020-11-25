@@ -199,6 +199,7 @@ $(document).ready(function () {
         touchMove: false,
         dots: false,
         draggable: false,
+        swipe: false,
         arrows: true,
         prevArrow: $('.os_watched_block_header_btns_prev'),
         nextArrow: $('.os_watched_block_header_btns_next'),
