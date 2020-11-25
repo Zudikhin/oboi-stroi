@@ -192,6 +192,62 @@ $(document).ready(function () {
         }
     });
 
+    $('.os_watched_block_list').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        touchMove: false,
+        dots: false,
+        draggable: false,
+        arrows: true,
+        prevArrow: $('.os_watched_block_header_btns_prev'),
+        nextArrow: $('.os_watched_block_header_btns_next'),
+        responsive: [
+            {
+              breakpoint: 1919,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 1025,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+                breakpoint: 577,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              }
+          ]
+    });
+
+    $(".os_watched_block_list_item .os_top .os_top_slider_block").each(function() {
+        if($(this).children().length > 1) {
+            $(this).slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+				fade: true,
+                prevArrow: '<button type="button" class="os_button os_top_slider_block_button os_top_slider_block_button_prev"><img src="img/shop/slider/arrow_prev.svg" alt=""></button>',
+	            nextArrow: '<button type="button" class="os_button os_top_slider_block_button os_top_slider_block_button_next"><img src="img/shop/slider/arrow_next.svg" alt=""></button>',
+            });
+        }
+    });
+
     $("#viewModule").click(function() {
         $(".os_shop_content_block_main_catalog_list").removeClass("module detail photo list");
         $(".os_shop_content_block_main_catalog_list").addClass("module");
