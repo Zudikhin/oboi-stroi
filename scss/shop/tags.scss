@@ -1,0 +1,23 @@
+.os_tags {
+  padding: 32px 0px;
+  box-sizing: border-box;
+  @media (min-width: 1366px) {
+    padding: 64px 0px 32px 0px;
+  }
+  & p {
+    font-size: 14px;
+    line-height: 21px;
+    color: $black-color;
+  }
+  &_block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    & a {
+      font-size: 14px;
+      line-height: 21px;
+      color: $blue-color;
+      margin-right: 16px;
+    }
+  }
+}

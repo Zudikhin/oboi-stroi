@@ -10,6 +10,10 @@
     display: block;
     background-color: #29c1d5;
     border-radius: 3px;
+    &-categories {
+      width: 288px;
+      margin: 0 auto;
+    }
   }
   &_main {
     width: 288px;

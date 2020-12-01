@@ -1,6 +1,6 @@
+@import "default/colors.scss";
 @import "default/fonts.scss";
 @import "default/default.scss";
-@import "default/colors.scss";
 @import "header/header.scss";
 @import "header/appointment.scss";
 @import "header/search_mobile.scss";
@@ -10,6 +10,10 @@
 @import "shop/shop.scss";
 @import "shop/pagination.scss";
 @import "shop/watched.scss";
+@import "shop/tags.scss";
+@import "shop/filters_btns.scss";
+@import "categories/categories.scss";
+@import "brands/brand.scss";
 
 @import "footer/partners.scss";
 @import "footer/popup.scss";

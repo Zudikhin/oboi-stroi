@@ -1,0 +1,51 @@
+.filter_btns {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #29c1d5;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+  &_filter {
+    width: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    & img {
+      margin-right: 8px;
+    }
+    & span {
+      font-family: "Roboto-Bold";
+      font-size: 14px;
+      line-height: 21px;
+      color: $white-color;
+    }
+  }
+  &_sort {
+    width: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 9px;
+    background-color: transparent;
+    & img {
+      margin-right: 8px;
+    }
+    & span {
+      font-family: "Roboto-Bold";
+      font-size: 14px;
+      line-height: 21px;
+      color: $white-color;
+    }
+  }
+}
