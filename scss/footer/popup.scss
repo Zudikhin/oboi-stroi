@@ -17,7 +17,44 @@
   left: 0;
   z-index: 4;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s fade-in;
+  @media (min-width: 1366px) {
+    overflow-y: hidden;
+  }
+  &_close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    & img {
+      height: 16px;
+      width: 16px;
+    }
+    @media (min-width: 1025px) {
+      display: none;
+    }
+  }
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s linear;
+  }
+}
+
+.os_back_modal_second {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  cursor: pointer;
+  width: 100%;
+  visibility: hidden;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  opacity: 0;
+  transition: all 0.2s fade-in;
   @media (min-width: 1366px) {
     overflow-y: hidden;
   }
@@ -54,11 +91,14 @@
   overflow-y: auto;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
+  transform: translateX(-500px);
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
+    z-index: 5;
+    transform: translateX(0px);
   }
   &_main {
     position: relative;
@@ -865,7 +905,8 @@
   height: 100%;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
+  transform: translateX(-500px);
   @media (min-width: 1366px) {
     width: 468px;
     height: auto;
@@ -978,8 +1019,9 @@
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
 }
 
@@ -1081,7 +1123,8 @@
   height: 100%;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
+  transform: translateX(-500px);
   & h4 {
     position: relative;
     font-family: "Roboto-Bold";
@@ -1111,8 +1154,9 @@
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
 }
 
@@ -1127,7 +1171,8 @@
   height: 100%;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
+  transform: translateX(-500px);
   & h4 {
     position: relative;
     font-family: "Roboto-Bold";
@@ -1157,8 +1202,9 @@
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
 }
 
@@ -1170,6 +1216,7 @@
   background-color: white;
   height: 100%;
   overflow-y: auto;
+  opacity: 0;
   transition: all 0.2s fade-out;
   scrollbar-width: none;
   transform: translateX(-500px);
@@ -1177,6 +1224,7 @@
     width: 0;
   }
   &.active {
+    opacity: 1;
     transition: all 0.2s ease-in;
     z-index: 5;
     transform: translateX(0px);
@@ -1271,6 +1319,14 @@
         height: 8px;
         background: url(../../img/shop/check.svg);
       }
+    }
+  }
+  &_all {
+    height: calc(100% - 44px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      width: 0;
     }
   }
   &_item {
@@ -1538,12 +1594,14 @@
   overflow-y: auto;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
+  transform: translateX(-500px);
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
   &_title {
     position: relative;
@@ -1659,11 +1717,11 @@
   width: 256px;
   background-color: white;
   height: 100%;
-  overflow-y: auto;
-  visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  overflow-y: auto;
+  transition: all 0.2s ease-out;
   box-sizing: border-box;
+  transform: translateX(-500px);
   & h4 {
     font-family: "Roboto-Bold";
     font-size: 16px;
@@ -1693,8 +1751,9 @@
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
 }
 
@@ -1709,8 +1768,9 @@
   overflow-y: auto;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
   box-sizing: border-box;
+  transform: translateX(-500px);
   & h4 {
     font-family: "Roboto-Bold";
     font-size: 16px;
@@ -1740,8 +1800,9 @@
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
 }
 
@@ -1756,8 +1817,9 @@
   overflow-y: auto;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
   box-sizing: border-box;
+  transform: translateX(-500px);
   & h4 {
     font-family: "Roboto-Bold";
     font-size: 16px;
@@ -1787,8 +1849,9 @@
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
 }
 
@@ -1803,14 +1866,16 @@
   overflow-y: hidden;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
   box-sizing: border-box;
   padding-bottom: 20px;
+  transform: translateX(-500px);
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
   &_header {
     & h4 {
@@ -1936,16 +2001,18 @@
   overflow-y: auto;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-out;
   scrollbar-width: none;
+  transform: translateX(-500px);
   &::-webkit-scrollbar {
     width: 0;
   }
   &.active {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     z-index: 5;
+    transform: translateX(0px);
   }
   &_header {
     & h4 {
