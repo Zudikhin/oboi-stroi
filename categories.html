@@ -1795,7 +1795,7 @@
       <form action="">
         <label>
           <span class="os_span">Номер телефона</span>
-          <input type="tel">
+          <input class="os_input" type="tel">
         </label>
         <button class="os_button" type="submit"><img src="img/shop/icon_order.svg" alt="">Заказать</button>
       </form>
@@ -1822,485 +1822,914 @@
       <div class="os_popup_filter_title">
         <h4 class="os_h">Фильтровать</h4>
       </div>
-      <label class="os_popup_filter_storage">
-        <input type="checkbox">
-        <span class="os_span">На складе</span>
-      </label>
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Тип покрытия
-            <div id="tooltipPremises" class="os_popup_filter_item_header_tooltip">
-              <img src="img/shop/question.svg" alt="">
+
+      <div class="os_popup_filter_all">
+
+        <label class="os_popup_filter_storage">
+          <input type="checkbox">
+          <span class="os_span">На складе</span>
+        </label>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Тип покрытия
+              <div id="tooltipPremises" class="os_popup_filter_item_header_tooltip">
+                <img src="img/shop/question.svg" alt="">
+              </div>
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
             </div>
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
-          </div>
-          <div class="os_popup_filter_item_body_list">
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Флизелиновые</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Виниловые</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Антивандальные</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Бумажные</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Флизелиновые</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Виниловые</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Антивандальные</span>
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Основа
-            <div id="tooltipMain" class="os_popup_filter_item_header_tooltip">
-              <img src="img/shop/question.svg" alt="">
+            <div class="os_popup_filter_item_body_list">
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Флизелиновые</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Виниловые</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Антивандальные</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Бумажные</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Флизелиновые</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Виниловые</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Антивандальные</span>
+              </label>
             </div>
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
-          </div>
-          <div class="os_popup_filter_item_body_list">
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Бумага</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Винил</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Тканевая</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Флизелин</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Бумага</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Винил</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Тканевая</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Флизелин</span>
-            </label>
           </div>
         </div>
-      </div>
 
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Покрытие
-            <div id="tooltipCoating" class="os_popup_filter_item_header_tooltip">
-              <img src="img/shop/question.svg" alt="">
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Основа
+              <div id="tooltipMain" class="os_popup_filter_item_header_tooltip">
+                <img src="img/shop/question.svg" alt="">
+              </div>
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
             </div>
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
-          </div>
-          <div class="os_popup_filter_item_body_list">
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Флизелин</span>
-            </label>
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Винил</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Винил горячего тиснения</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Акрил</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">Текстиль</span>
-            </label>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Основной цвет
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
-          </div>
-          <div class="os_popup_filter_item_body_list">
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">
-                <div class="palette_color" style="background-color: rgb(225, 255, 38);"></div>
-                Лимонный
-              </span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">
-                <div class="palette_color" style="background-color: rgb(255, 255, 255);"></div>
-                Белый
-              </span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">
-                <div class="palette_color" style="background-color: rgb(234, 253, 255);"></div>
-                Светло-голубой
-              </span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">
-                <div class="palette_color" style="background-color:rgb(255, 234, 211);"></div>
-                Кремовый
-              </span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">
-                <div class="palette_color" style="background-color: rgb(225, 255, 38);"></div>
-                Лимонный
-              </span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">
-                <div class="palette_color" style="background-color: rgb(255, 255, 255);"></div>
-                Белый
-              </span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">
-                <div class="palette_color" style="background-color: rgb(234, 253, 255);"></div>
-                Светло-голубой
-              </span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">
-                <div class="palette_color" style="background-color:rgb(255, 234, 211);"></div>
-                Кремовый
-              </span>
-            </label>
-
-
-            
+            <div class="os_popup_filter_item_body_list">
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Бумага</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Винил</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Тканевая</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Флизелин</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Бумага</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Винил</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Тканевая</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Флизелин</span>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Бренд
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Покрытие
+              <div id="tooltipCoating" class="os_popup_filter_item_header_tooltip">
+                <img src="img/shop/question.svg" alt="">
+              </div>
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
           </div>
-          <div class="os_popup_filter_item_body_list">
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Флизелин</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Винил</span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Винил горячего тиснения</span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Акрил</span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">Текстиль</span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-            
-          </div>
-        </div>
-      </div>
-      
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Страна
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
-          </div>
-          <div class="os_popup_filter_item_body_list">
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-            
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Стиль
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Основной цвет
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
           </div>
-          <div class="os_popup_filter_item_body_list">
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">
+                  <div class="palette_color" style="background-color: rgb(225, 255, 38);"></div>
+                  Лимонный
+                </span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">
+                  <div class="palette_color" style="background-color: rgb(255, 255, 255);"></div>
+                  Белый
+                </span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">
+                  <div class="palette_color" style="background-color: rgb(234, 253, 255);"></div>
+                  Светло-голубой
+                </span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">
+                  <div class="palette_color" style="background-color:rgb(255, 234, 211);"></div>
+                  Кремовый
+                </span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-            
-          </div>
-        </div>
-      </div>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">
+                  <div class="palette_color" style="background-color: rgb(225, 255, 38);"></div>
+                  Лимонный
+                </span>
+              </label>
 
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Тематика
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
-          </div>
-          <div class="os_popup_filter_item_body_list">
+              <label>
+                <input type="checkbox">
+                <span class="os_span">
+                  <div class="palette_color" style="background-color: rgb(255, 255, 255);"></div>
+                  Белый
+                </span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">
+                  <div class="palette_color" style="background-color: rgb(234, 253, 255);"></div>
+                  Светло-голубой
+                </span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">
+                  <div class="palette_color" style="background-color:rgb(255, 234, 211);"></div>
+                  Кремовый
+                </span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Рисунок
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
-          </div>
-          <div class="os_popup_filter_item_body_list">
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-            
+              
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="os_popup_filter_item">
-        <div class="os_popup_filter_item_header">
-          <span class="os_span">
-            Размер рисунка
-          </span>
-          <img class="arrow" src="img/arrow-black.svg" alt="">
-        </div>
-        <div class="os_popup_filter_item_body">
-          <div class="os_popup_filter_item_body_search">
-            <input type="text" placeholder="Поиск по характеристике">
+        
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Бренд
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
           </div>
-          <div class="os_popup_filter_item_body_list">
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
 
-            <label>
-              <input type="checkbox">
-              <span class="os_span">lorem</span>
-            </label>
-            
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
           </div>
         </div>
-      </div>
+        
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Страна
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Стиль
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Тематика
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Рисунок
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="os_popup_filter_item">
+          <div class="os_popup_filter_item_header">
+            <span class="os_span">
+              Размер рисунка
+            </span>
+            <img class="arrow" src="img/arrow-black.svg" alt="">
+          </div>
+          <div class="os_popup_filter_item_body">
+            <div class="os_popup_filter_item_body_search">
+              <input class="os_input" type="text" placeholder="Поиск по характеристике">
+            </div>
+            <div class="os_popup_filter_item_body_list">
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span class="os_span">lorem</span>
+              </label>
+              
+            </div>
+          </div>
+        </div>
+
+    </div>
 
       <div class="os_popup_filter_btns">
         <button class="os_button os_popup_filter_btns_drop" disabled>
@@ -2364,7 +2793,7 @@
         <h4 class="os_h">Коллекции A.S. Creation </h4>
       </div>
       <div class="os_popup_collection_search">
-        <input type="text" placeholder="Поиск по коллекциям">
+        <input class="os_input" type="text" placeholder="Поиск по коллекциям">
       </div>
       <div class="os_popup_collection_list">
         <div class="os_popup_collection_list_block">
@@ -2500,27 +2929,27 @@
 
             <label>
               <span class="os_span">Высота стен, м </span>
-              <input type="text">
+              <input class="os_input" type="text">
             </label>
 
             <label>
               <span class="os_span">Ширина стены <span class="os_span num">1</span>, м</span>
-              <input type="text">
+              <input class="os_input" type="text">
             </label>
 
             <label>
               <span class="os_span">Ширина стены <span class="os_span num">2</span>, м</span>
-              <input type="text">
+              <input class="os_input" type="text">
             </label>
 
             <label>
               <span class="os_span">Ширина стены <span class="os_span num">3</span>, м</span>
-              <input type="text">
+              <input class="os_input" type="text">
             </label>
 
             <label>
               <span class="os_span">Ширина стены <span class="os_span num">4</span>, м</span>
-              <input type="text">
+              <input class="os_input" type="text">
             </label>
 
         </div>
@@ -2556,7 +2985,7 @@
 
         </div>
 
-        <div class="os_button os_popup_calculation_doors_btn">Добавить дверь</div>
+        <button class="os_button os_popup_calculation_doors_btn">Добавить дверь</button>
 
         <div class="os_popup_calculation_doors_error">
           <p class="os_p">Введите все параметры</p>
@@ -2582,7 +3011,7 @@
           </div> -->
         </div>
 
-        <div class="os_button os_popup_calculation_window_btn">Добавить окно</div>
+        <button class="os_button os_popup_calculation_window_btn">Добавить окно</button>
 
         <div class="os_popup_calculation_window_error">
           <p class="os_p">Введите все параметры</p>
@@ -2597,15 +3026,15 @@
         <div class="os_popup_calculation_sizes_main">
           <label>
             <span class="os_span">Ширина рулона, м</span>
-            <input type="text">
+            <input class="os_input" type="text">
           </label>
           <label>
             <span class="os_span">Длина рулона, м</span>
-            <input type="text">
+            <input class="os_input" type="text">
           </label>
           <label>
             <span class="os_span">Повтор рисунка (рапорт), см</span>
-            <input type="text">
+            <input class="os_input" type="text">
           </label>
         </div>
         <div class="os_popup_calculation_sizes_error">
@@ -2629,8 +3058,152 @@
 
     </div>
 
+    <div class="os_popup_buy">
+      <div class="os_popup_buy_block">
+
+        <button class="os_button os_popup_buy_block_close">
+          <img src="img/cart/remove.png" alt="">
+        </button>
+
+        <div class="os_popup_buy_block_main">
+
+          <div class="os_popup_buy_block_main_slider">
+            <div class="os_popup_buy_block_main_slider_item">
+              <img src="img/cart/popup/image.png" alt="">
+            </div>
+            <div class="os_popup_buy_block_main_slider_item">
+              <img src="img/cart/popup/image.png" alt="">
+            </div>
+            <div class="os_popup_buy_block_main_slider_item">
+              <img src="img/cart/popup/image.png" alt="">
+            </div>
+            <div class="os_popup_buy_block_main_slider_item">
+              <img src="img/cart/popup/image.png" alt="">
+            </div>
+          </div>
+
+          <div class="os_popup_buy_block_main_btns">
+            <button class="os_button os_popup_buy_block_main_btns_prev"><img src="img/cart/popup/prev.svg" alt=""></button>
+            <button class="os_button os_popup_buy_block_main_btns_next"><img src="img/cart/popup/next.svg" alt=""></button>
+          </div>
+
+        </div>
+
+        <div class="os_popup_buy_block_quantity">
+
+          <div class="os_popup_buy_block_quantity_numbers">
+            <button class="os_button os_popup_buy_block_quantity_numbers_minus">-</button>
+            <span class="os_span os_popup_buy_block_quantity_numbers_number">4</span>
+            <button class="os_button os_popup_buy_block_quantity_numbers_plus">+</button>
+          </div>
+
+          <button class="os_button os_popup_buy_block_quantity_math">Расчет количества</button>
+        </div>
+
+        <button class="os_button os_button os_popup_buy_block_btn">
+          <img src="img/cart/forget/icon_buy.svg" alt="">
+          <span class="os_span">Купить</span>
+        </button>
+
+        <a href="#" class="os_a os_popup_buy_block_detail">Подробнее о товаре</a>
+
+      </div>
+    </div>
+
+    <div class="os_popup_add">
+      <div class="os_popup_add_block">
+
+        <button class="os_button os_popup_add_block_close">
+          <img src="img/cart/remove.png" alt="">
+        </button>
+
+        <div class="os_popup_add_block_main">
+
+          <div class="os_popup_add_block_main_slider">
+            <div class="os_popup_add_block_main_slider_item">
+              <img src="img/cart/popup/image.png" alt="">
+            </div>
+            <div class="os_popup_add_block_main_slider_item">
+              <img src="img/cart/popup/image.png" alt="">
+            </div>
+            <div class="os_popup_add_block_main_slider_item">
+              <img src="img/cart/popup/image.png" alt="">
+            </div>
+            <div class="os_popup_add_block_main_slider_item">
+              <img src="img/cart/popup/image.png" alt="">
+            </div>
+          </div>
+
+          <div class="os_popup_add_block_main_btns">
+            <button class="os_button os_popup_add_block_main_btns_prev"><img src="img/cart/popup/prev.svg" alt=""></button>
+            <button class="os_button os_popup_add_block_main_btns_next"><img src="img/cart/popup/next.svg" alt=""></button>
+          </div>
+
+        </div>
+
+        <div class="os_popup_add_block_quantity">
+
+          <div class="os_popup_add_block_quantity_numbers">
+            <button class="os_button os_popup_add_block_quantity_numbers_minus">-</button>
+            <span class="os_span os_popup_add_block_quantity_numbers_number">4</span>
+            <button class="os_button os_popup_add_block_quantity_numbers_plus">+</button>
+          </div>
+
+          <button class="os_button os_popup_add_block_quantity_math">Расчет количества</button>
+        </div>
+
+        <button class="os_button os_popup_add_block_add">
+          <span class="os_span badge">+</span>
+          <span class="os_span text">Добавить</span>
+        </button>
+
+        <a href="#" class="os_a os_popup_add_block_detail">Подробнее о товаре</a>
+
+      </div>
+    </div>
+
+    <div class="os_popup_delivery_condition">
+
+      <div class="os_popup_delivery_condition_title">
+        <h4 class="os_h">Условие доставки</h4>
+        <button class="os_button os_popup_delivery_condition_title_close"><img src="img/checkout/close.svg" alt=""></button>
+      </div>
+
+      <div class="os_popup_delivery_condition_item">
+        <h5 class="os_h">Забрать в магазине</h5>
+        <p class="os_p">Вы можете бесплатно забрать заказ из наших шоу-румов по адресу: <br>
+          г. Москва, метро Сокол, Волоколамское шоссе, д. 6 (вход со стороны шоссе)</p>
+      </div>
+
+      <div class="os_popup_delivery_condition_item">
+        <h5 class="os_h">Доставка по Москве и МО</h5>
+        <p class="os_p"><b>Обычная доставка</b> в пределах МКАД осуществляется <b>бесплатно при заказе на сумму 15 000 рублей и выше</b> на все типы товаров</p>
+        <p class="os_p"><b>Доставка осуществляется</b> с пн. по сб. с 11:00 до 21:00, при этом доставка с 18:00 до 21:00 считается вечерней, и оплачивается дополнительно - 250 р.
+        </p>
+        <p class="os_p"><b>Стоимость срочной доставки</b> (доставка осуществлятся на следующий день) в переделах МКАД - 990 рублей на все типы товаров (вне зависимости от суммы заказа).
+          Оформить срочную доставку на завтра можно сегодня до 15:00.
+          </p>
+        <p class="os_p"><b>Доставка за пределы МКАД</b> (до 20 км) осуществляется собственной службой логистики и рассчитывается исходя из дополнительной оплаты:
+          до 5 км. за МКАД: 30 руб./км.
+          от 5 до 20 км. за МКАД: 50 руб./км.</p>
+      </div>
+
+      <div class="os_popup_delivery_condition_item">
+        <h5 class="os_h">Доставка по России</h5>
+        <p class="os_p">Мы отправляем Ваш заказ в транспортную компанию после 100% предоплаты товара. Отправка заказа происходит в течении 3-х рабочих дней после получения денег.
+        </p>
+        <p class="os_p"><b>Доставка до транспортной компании</b> осуществляется <b>БЕСПЛАТНО</b> (оплачивается только услуги ТК по перемещению груза от терминала в Москве до вашего города).</p>
+      </div>
+
+
+    </div>
+
     <div class="os_back_modal">
       <button class="os_button os_back_modal_close"><img src="img/close.svg" alt=""></button>
+    </div>
+
+    <div class="os_back_modal_second">
+      <button class="os_button os_back_modal_second_close"><img src="img/close.svg" alt=""></button>
     </div>
 
 

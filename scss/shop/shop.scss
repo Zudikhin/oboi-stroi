@@ -1,11 +1,13 @@
 .os_shop {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 32px;
   &_title {
     &_content {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       flex-wrap: wrap;
-      margin-top: 16px;
       & h2 {
         font-family: "Roboto-Bold";
         font-size: 21px;

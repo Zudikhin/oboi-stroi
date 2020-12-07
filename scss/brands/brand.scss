@@ -1,8 +1,9 @@
 .os_brands {
-  margin-top: 16px;
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #fff;
   @media (min-width: 1024px) {
-    margin-bottom: 64px;
+    padding-bottom: 64px;
   }
   &_block {
     &_header {
@@ -66,7 +67,8 @@
           }
           &_block {
             box-sizing: border-box;
-            padding: 9px 16px;
+            //padding: 9px 16px;
+            padding: 7px 16px 11px 16px;
             background-color: #f4f5f5;
             border-radius: 20px;
             margin-right: 4px;
@@ -98,6 +100,7 @@
               font-size: 14px;
               line-height: 12px;
               color: $black-color;
+              white-space: nowrap;
             }
           }
           &:last-child {
@@ -115,10 +118,12 @@
             }
           }
           &:hover {
-            background-color: $grey-color;
-            transition: all 0.2s linear;
-            & span {
-              color: $white-color;
+            @media (min-width: 1025px) {
+              background-color: $grey-color;
+              transition: all 0.2s linear;
+              & span {
+                color: $white-color;
+              }
             }
           }
         }

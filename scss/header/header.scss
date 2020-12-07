@@ -123,12 +123,14 @@
     display: none;
     @media (min-width: 1024px) {
       display: block;
+      background-color: #fff;
+      padding-bottom: 16px;
     }
     &_top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 24px 0px;
+      padding: 24px 0px;
       &_tel {
         & p {
           font-size: 12px;
@@ -912,10 +914,10 @@
     height: 56px;
     display: none;
     @media (min-width: 1024px) {
-      height: 184.5px;
+      height: 200.5px;
     }
     @media (min-width: 1286px) {
-      height: 132.5px;
+      height: 148.5px;
     }
   }
 }
@@ -936,6 +938,7 @@
     left: 0;
     width: 100%;
     z-index: 3;
+    padding-bottom: 0px;
     &_top {
       display: none;
     }
@@ -1025,6 +1028,7 @@
     display: none;
     @media (min-width: 1024px) {
       display: block;
+      background-color: #fff;
     }
     &_content {
       display: flex;

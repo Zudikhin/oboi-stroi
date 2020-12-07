@@ -138,10 +138,11 @@
   &_mob_bottom {
     box-sizing: border-box;
     padding-bottom: 16px;
+    background-color: #fff;
     &_payment {
       display: flex;
       justify-content: center;
-      margin-top: 16px;
+      padding-top: 16px;
       &_item {
         margin-right: 16px;
       }
@@ -295,6 +296,7 @@
     }
     &_bottom {
       padding: 16px 0px;
+      background-color: #fff;
       &_content {
         display: flex;
         justify-content: space-between;

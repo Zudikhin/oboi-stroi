@@ -1,0 +1,170 @@
+.os_forget {
+  margin-top: 30px;
+  background-color: #fff;
+  padding-bottom: 48px;
+  &_main {
+    &_header {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      & h4 {
+        font-family: "Roboto-Bold";
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+        margin-right: 16px;
+        margin-top: 16px;
+        @media (min-width: 1024px) {
+          margin-top: 48px;
+        }
+      }
+      &_btns {
+        display: flex;
+        margin-top: 16px;
+        @media (min-width: 1024px) {
+          margin-top: 48px;
+        }
+        & button {
+          width: 36px;
+          height: 36px;
+          border: 1px solid #dfe3e8;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: transparent;
+          &:focus {
+            border: 1px solid #dfe3e8;
+          }
+        }
+        &_prev {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        &_next {
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+    &_slider {
+      margin-top: 16px;
+      @media (min-width: 768px) {
+        margin-top: 32px;
+      }
+      & .slick-list {
+        margin: 0 -8px;
+        @media (min-width: 768px) {
+          margin: 0 -16px;
+        }
+      }
+      .slick-slide {
+        margin: 0 8px;
+        @media (min-width: 768px) {
+          margin: 0 16px;
+        }
+      }
+      &_item {
+        position: relative;
+        &_img {
+          cursor: pointer;
+          & img {
+            width: 100%;
+          }
+        }
+        &_sticer {
+          cursor: pointer;
+          position: absolute;
+          left: 0;
+          top: 0;
+          box-sizing: border-box;
+          padding: 4px 8px;
+          border-top-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+          & span {
+            font-family: "Roboto-Bold";
+            font-size: 12px;
+            line-height: 18px;
+            color: $white-color;
+            text-transform: uppercase;
+          }
+          &-hit {
+            background-color: #f2be22;
+          }
+          &-new {
+            background-color: #39a008;
+          }
+        }
+        & h4 {
+          font-family: "Roboto-Bold";
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-top: 8px;
+          cursor: pointer;
+        }
+        & .article {
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+          cursor: pointer;
+        }
+        &_warehouse {
+          margin-top: 8px;
+          cursor: pointer;
+          & p {
+            font-family: "Roboto-Bold";
+            font-size: 12px;
+            line-height: 18px;
+            color: $blue-color;
+          }
+        }
+        &_price {
+          display: flex;
+          margin-top: 8px;
+          cursor: pointer;
+          & span {
+            font-family: "Roboto-Bold";
+            color: $black-color;
+          }
+          & .number {
+            font-size: 16px;
+            line-height: 24px;
+          }
+          & .currency {
+            font-size: 14px;
+            line-height: 24px;
+            margin-left: 8px;
+          }
+        }
+        &_buy {
+          width: 100%;
+          height: 36px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ff8b09;
+          border-radius: 3px;
+          margin-top: 8px;
+          & img {
+            margin-right: 8px;
+          }
+          & span {
+            font-family: "Roboto-Bold";
+            font-size: 14px;
+            line-height: 21px;
+            color: $white-color;
+          }
+          @media (min-width: 768px) {
+            width: 136px;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}

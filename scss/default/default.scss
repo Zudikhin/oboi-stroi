@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   position: relative;
+  background-color: #f4f5f5;
 }
 .os_button {
   border: none;
@@ -17,6 +18,10 @@
 }
 div {
   -webkit-tap-highlight-color: transparent;
+  &:focus {
+    border: none;
+    outline: none;
+  }
 }
 .os_a {
   text-decoration: none;
@@ -51,6 +56,10 @@ div {
   color: $black-color;
 }
 .os_input:focus {
+  outline: none;
+}
+
+.os_textarea:focus {
   outline: none;
 }
 .os_p {

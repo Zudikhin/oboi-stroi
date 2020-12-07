@@ -1,8 +1,9 @@
 .os_categories {
-  margin-top: 16px;
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #fff;
   @media (min-width: 1024px) {
-    margin-bottom: 64px;
+    padding-bottom: 64px;
   }
   &_block {
     &_header {
