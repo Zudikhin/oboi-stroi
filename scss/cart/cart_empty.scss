@@ -64,13 +64,12 @@
             border: 1px solid #c4cdd5;
             border-radius: 3px;
             position: relative;
-            box-sizing: border-box;
+            height: 32px;
             & input[type="text"] {
               font-size: 12px;
-              line-height: 18px;
+              line-height: 30px;
               color: $black-color;
               width: calc(100% - 48px);
-              height: 32px;
               padding-left: 9px;
               border-radius: 3px;
             }
@@ -79,12 +78,14 @@
               cursor: pointer;
               right: 10px;
               width: 18px;
+              max-width: 18px;
               height: 18px;
               top: 0;
               top: 50%;
               transform: translateY(-50%);
-              background-repeat: no-repeat;
-              background: url(../../img/header/header_desktop/search.svg);
+              background: url(../../img/header/header_desktop/search.svg)
+                no-repeat center center;
+              background-size: cover;
             }
           }
           &_droplist {

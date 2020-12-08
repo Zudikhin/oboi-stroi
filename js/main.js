@@ -1000,7 +1000,6 @@ $(document).ready(function () {
     $(".os_forget_main_slider_item_buy").click(function() {
         $('html, body').animate({
             scrollTop: 0}, 1500);
-        $(".os_popup_cart").addClass("active");
     });
 
     $(".os_cart_empty_content_main_bottom_form form input[type=text]").on('input',function(e){
@@ -1147,6 +1146,50 @@ $(document).ready(function () {
         if($(this).has(e.target).length === 0) {
             $(this).removeClass("active");
         }
+    });
+
+    $(".os_delivery_main_block_mo_btns_show").click(function() {
+        $(".os_delivery_main_block_mo_drop").addClass("active");
+        $(this).removeClass("active");
+        $(".os_delivery_main_block_mo_btns_hide").addClass("active");
+    });
+
+    $(".os_delivery_main_block_mo_btns_hide").click(function() {
+        $(".os_delivery_main_block_mo_drop").removeClass("active");
+        $(this).removeClass("active");
+        $(".os_delivery_main_block_mo_btns_show").addClass("active");
+    });
+
+    $(".os_delivery_main_block_country_btns_show").click(function() {
+        $(".os_delivery_main_block_country_drop").addClass("active");
+        $(this).removeClass("active");
+        $(".os_delivery_main_block_country_btns_hide").addClass("active");
+    });
+
+    $(".os_delivery_main_block_country_btns_hide").click(function() {
+        $(".os_delivery_main_block_country_drop").removeClass("active");
+        $(this).removeClass("active");
+        $(".os_delivery_main_block_country_btns_show").addClass("active");
+    });
+
+
+    $(".os_navigation_feature .os_navigation_feature_drop_item_header").click(function() {
+        $(this).parent().toggleClass('active');
+    });
+
+    $(".os_navigation_feature_open").click(function() {
+        $(this).parent().addClass("active");
+    });
+
+    $(".os_navigation_feature_drop_close").click(function() {
+        $(".os_navigation_feature").removeClass("active");
+    });
+
+    $(".os_delivery_main_block_options_item").click(function() {
+        var target = $(this).attr("data-target");
+        $('html, body').animate({
+            scrollTop: $(`#${target}`).offset().top - $(window).height() / 2
+        }, 1500);
     });
 
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });

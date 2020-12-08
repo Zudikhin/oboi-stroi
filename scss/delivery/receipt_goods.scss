@@ -1,0 +1,38 @@
+.os_receipt_goods {
+  background-color: #fff;
+  margin-top: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media (min-width: 1366px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &_main {
+    @media (min-width: 768px) {
+      margin-left: 270px;
+    }
+    & h4 {
+      font-family: "Roboto-Bold";
+      font-size: 18px;
+      line-height: 27px;
+      color: $black-color;
+      margin-bottom: 8px;
+    }
+    & p {
+      font-size: 14px;
+      line-height: 21px;
+      color: $black-color;
+      margin-bottom: 16px;
+    }
+    & ul {
+      & li {
+        display: flex;
+        align-items: flex-start;
+        & img {
+          margin-right: 8px;
+          transform: translateY(1px);
+        }
+      }
+    }
+  }
+}

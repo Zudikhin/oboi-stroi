@@ -3337,6 +3337,7 @@
   transition: all 0.2s fade-out;
   scrollbar-width: none;
   transform: translateX(-500px);
+  z-index: -1;
   &::-webkit-scrollbar {
     width: 0;
   }
