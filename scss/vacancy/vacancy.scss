@@ -1,0 +1,43 @@
+.os_vacancy {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  @media (min-width: 1024px) {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  &_main {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &_block {
+      margin-top: 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+        margin-top: 0px;
+      }
+      & h3 {
+        font-family: "Roboto-Bold";
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+      }
+      & p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-color;
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+      & a {
+        font-size: 14px;
+        line-height: 21px;
+        color: $blue-color;
+        & img {
+          margin-right: 8px;
+          transform: translateY(3px);
+        }
+      }
+    }
+  }
+}

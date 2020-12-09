@@ -1216,6 +1216,31 @@ $(document).ready(function () {
         $(".os_return_main_block_unproper_btns_show").addClass("active");
     });
 
+    $(".os_guarantees_main_block_warranty_dealer_btns_show").click(function() {
+        $(this).removeClass("active");
+        $(".os_guarantees_main_block_warranty_dealer").addClass("active");
+        $(".os_guarantees_main_block_warranty_dealer_btns_hide").addClass("active");
+    });
+
+    $(".os_guarantees_main_block_warranty_dealer_btns_hide").click(function() {
+        $(this).removeClass("active");
+        $(".os_guarantees_main_block_warranty_dealer").removeClass("active");
+        $(".os_guarantees_main_block_warranty_dealer_btns_show").addClass("active");
+    });
+
+    $(".os_guarantees_main_block_warranty_quality_btns_show").click(function() {
+        $(this).removeClass("active");
+        $(".os_guarantees_main_block_warranty_quality").addClass("active");
+        $(".os_guarantees_main_block_warranty_quality_btns_hide").addClass("active");
+    });
+
+    $(".os_guarantees_main_block_warranty_quality_btns_hide").click(function() {
+        $(this).removeClass('active');
+        $(".os_guarantees_main_block_warranty_quality").removeClass("active");
+        $(".os_guarantees_main_block_warranty_quality_btns_show").addClass("active");
+    });
+
+
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });
 
     $(".os_checkout_content_main_left_method_delivery_drop").overlayScrollbars({ });

@@ -1,0 +1,262 @@
+.os_guarantees {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  @media (min-width: 1024px) {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  &_main {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &_block {
+      margin-top: 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+        margin-top: 0px;
+        width: 100%;
+      }
+      & h3 {
+        font-family: "Roboto-Bold";
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+      }
+      &_warranty {
+        &_dealer {
+          margin-top: 16px;
+          & h4 {
+            font-family: "Roboto-Bold";
+            font-size: 18px;
+            line-height: 27px;
+            color: $black-color;
+          }
+          & ul {
+            li {
+              margin-top: 17px;
+              display: none;
+              & button {
+                display: flex;
+                background-color: transparent;
+                & img {
+                  margin-right: 8px;
+                }
+                & span {
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: $blue-color;
+                }
+              }
+              &:first-child {
+                display: block;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+              &:nth-child(3) {
+                display: block;
+              }
+              &:nth-child(4) {
+                display: block;
+              }
+              &:nth-child(5) {
+                display: block;
+              }
+              &:nth-child(6) {
+                display: block;
+              }
+              &:nth-child(7) {
+                display: block;
+              }
+              &:nth-child(8) {
+                display: block;
+              }
+              &:nth-child(9) {
+                display: block;
+              }
+              &:nth-child(10) {
+                display: block;
+              }
+            }
+          }
+          &_btns {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 16px;
+            & button {
+              display: none;
+              align-items: center;
+              background-color: transparent;
+              & span {
+                font-size: 14px;
+                line-height: 21px;
+                color: $blue-color;
+              }
+              & img {
+                margin-left: 4px;
+              }
+              &.active {
+                display: flex;
+              }
+            }
+            &_hide {
+              & img {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          &.active {
+            & ul {
+              & li {
+                display: block;
+              }
+            }
+          }
+        }
+        &_quality {
+          margin-top: 32px;
+          & h4 {
+            font-family: "Roboto-Bold";
+            font-size: 18px;
+            line-height: 27px;
+            color: $black-color;
+          }
+          & ul {
+            li {
+              margin-top: 17px;
+              display: none;
+              & button {
+                display: flex;
+                background-color: transparent;
+                & img {
+                  margin-right: 8px;
+                }
+                & span {
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: $blue-color;
+                }
+              }
+              &:first-child {
+                display: block;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+              &:nth-child(3) {
+                display: block;
+              }
+              &:nth-child(4) {
+                display: block;
+              }
+              &:nth-child(5) {
+                display: block;
+              }
+              &:nth-child(6) {
+                display: block;
+              }
+              &:nth-child(7) {
+                display: block;
+              }
+              &:nth-child(8) {
+                display: block;
+              }
+              &:nth-child(9) {
+                display: block;
+              }
+              &:nth-child(10) {
+                display: block;
+              }
+            }
+          }
+          &_btns {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 16px;
+            & button {
+              display: none;
+              align-items: center;
+              background-color: transparent;
+              & span {
+                font-size: 14px;
+                line-height: 21px;
+                color: $blue-color;
+              }
+              & img {
+                margin-left: 4px;
+              }
+              &.active {
+                display: flex;
+              }
+            }
+            &_hide {
+              & img {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          &.active {
+            & ul {
+              & li {
+                display: block;
+              }
+            }
+          }
+        }
+        @media (min-width: 1024px) {
+          display: flex;
+          justify-content: space-between;
+          & .os_guarantees_main_block_warranty_dealer {
+            width: 50%;
+          }
+          & .os_guarantees_main_block_warranty_quality {
+            width: 50%;
+            margin-top: 16px;
+          }
+        }
+        @media (min-width: 1366px) {
+          justify-content: flex-start;
+          & .os_guarantees_main_block_warranty_dealer {
+            width: 500px;
+          }
+          & .os_guarantees_main_block_warranty_quality {
+            width: 500px;
+            margin-left: 32px;
+          }
+        }
+      }
+      &_return {
+        margin-top: 32px;
+        & h4 {
+          font-family: "Roboto-Bold";
+          font-size: 18px;
+          line-height: 27px;
+          color: $black-color;
+          margin-bottom: 8px;
+          @media (min-width: 1024px) {
+            margin-bottom: 16px;
+          }
+        }
+        & p {
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+        }
+        & a {
+          font-size: 14px;
+          line-height: 21px;
+          color: $blue-color;
+          display: inline-block;
+          margin-top: 8px;
+          & img {
+            margin-right: 8px;
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+}
