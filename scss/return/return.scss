@@ -1,0 +1,313 @@
+.os_return {
+  background-color: #fff;
+  padding-top: 16px;
+  @media (min-width: 1024px) {
+    padding-top: 32px;
+  }
+  &_main {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &_block {
+      margin-top: 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+        margin-top: 0px;
+      }
+      & h3 {
+        font-family: "Roboto-Bold";
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+      }
+      & p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-color;
+      }
+      &_text {
+        margin-top: 16px;
+      }
+      &_proper {
+        & h4 {
+          font-family: "Roboto-Bold";
+          font-size: 18px;
+          line-height: 27px;
+          color: $black-color;
+          margin-top: 32px;
+        }
+        &_text {
+          margin-top: 8px;
+        }
+        &_drop {
+          display: none;
+          &.active {
+            display: block;
+          }
+          @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+          }
+          &_left {
+            @media (min-width: 1024px) {
+              width: calc(50% - 16px);
+            }
+            & h5 {
+              font-family: "Roboto-Bold";
+              font-size: 14px;
+              line-height: 21px;
+              color: $black-color;
+              margin-top: 16px;
+              margin-bottom: 8px;
+            }
+            & ul {
+              & li {
+                margin-bottom: 16px;
+                display: flex;
+                align-items: flex-start;
+                & img {
+                  margin-right: 8px;
+                  transform: translateY(1px);
+                }
+                & p {
+                  & a {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $black-color;
+                  }
+                }
+              }
+            }
+          }
+          &_right {
+            @media (min-width: 1024px) {
+              width: calc(50% - 16px);
+            }
+            & h5 {
+              font-family: "Roboto-Bold";
+              font-size: 14px;
+              line-height: 21px;
+              color: $black-color;
+              margin-bottom: 8px;
+              @media (min-width: 1024px) {
+                margin-top: 16px;
+              }
+            }
+            &_item {
+              display: flex;
+              margin-bottom: 16px;
+              &_num {
+                font-family: "Roboto-Bold";
+                font-size: 14px;
+                line-height: 21px;
+                color: $black-color;
+              }
+              &_block {
+                margin-left: 8px;
+                &_tel {
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: $black-color;
+                  margin-bottom: 8px;
+                  display: inline-block;
+                  margin-top: 8px;
+                  & img {
+                    margin-right: 8px;
+                    transform: translateY(3px);
+                  }
+                }
+                &_link {
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: $blue-color;
+                  display: inline-block;
+                  margin-top: 12px;
+                  & img {
+                    transform: translateY(2px);
+                    margin-right: 8px;
+                  }
+                }
+                &_margin {
+                  margin-top: 16px;
+                  @media (min-width: 1024px) {
+                    margin-top: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &_btns {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 11px;
+          & button {
+            display: none;
+            align-items: center;
+            background-color: transparent;
+            & span {
+              font-size: 14px;
+              line-height: 21px;
+              color: $blue-color;
+            }
+            & img {
+              margin-left: 4px;
+            }
+            &.active {
+              display: flex;
+            }
+          }
+          &_hide {
+            & img {
+              transform: rotate(180deg);
+            }
+          }
+          @media (min-width: 1024px) {
+            display: none;
+          }
+        }
+      }
+      &_unproper {
+        & h4 {
+          font-family: "Roboto-Bold";
+          font-size: 18px;
+          line-height: 27px;
+          color: $black-color;
+          margin-top: 32px;
+        }
+        &_text {
+          margin-top: 8px;
+        }
+        &_drop {
+          display: none;
+          &.active {
+            display: block;
+          }
+          @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+          }
+          &_left {
+            @media (min-width: 1024px) {
+              width: calc(50% - 16px);
+            }
+            & h5 {
+              font-family: "Roboto-Bold";
+              font-size: 14px;
+              line-height: 21px;
+              color: $black-color;
+              margin-top: 16px;
+              margin-bottom: 8px;
+            }
+            & ul {
+              & li {
+                margin-bottom: 16px;
+                display: flex;
+                align-items: flex-start;
+                & img {
+                  margin-right: 8px;
+                  transform: translateY(1px);
+                }
+                & p {
+                  & a {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $black-color;
+                  }
+                }
+              }
+            }
+          }
+          &_right {
+            @media (min-width: 1024px) {
+              width: calc(50% - 16px);
+            }
+            & h5 {
+              font-family: "Roboto-Bold";
+              font-size: 14px;
+              line-height: 21px;
+              color: $black-color;
+              margin-bottom: 8px;
+              @media (min-width: 1024px) {
+                margin-top: 16px;
+              }
+            }
+            &_item {
+              display: flex;
+              margin-bottom: 16px;
+              &_num {
+                font-family: "Roboto-Bold";
+                font-size: 14px;
+                line-height: 21px;
+                color: $black-color;
+              }
+              &_block {
+                margin-left: 8px;
+                &_tel {
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: $black-color;
+                  margin-bottom: 8px;
+                  display: inline-block;
+                  margin-top: 8px;
+                  & img {
+                    margin-right: 8px;
+                    transform: translateY(3px);
+                  }
+                }
+                &_link {
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: $blue-color;
+                  display: inline-block;
+                  margin-top: 12px;
+                  & img {
+                    transform: translateY(2px);
+                    margin-right: 8px;
+                  }
+                }
+                &_margin {
+                  margin-top: 16px;
+                  @media (min-width: 1024px) {
+                    margin-top: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &_btns {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 11px;
+          & button {
+            display: none;
+            align-items: center;
+            background-color: transparent;
+            & span {
+              font-size: 14px;
+              line-height: 21px;
+              color: $blue-color;
+            }
+            & img {
+              margin-left: 4px;
+            }
+            &.active {
+              display: flex;
+            }
+          }
+          &_hide {
+            & img {
+              transform: rotate(180deg);
+            }
+          }
+          @media (min-width: 1024px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

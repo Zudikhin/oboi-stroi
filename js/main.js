@@ -1192,6 +1192,30 @@ $(document).ready(function () {
         }, 1500);
     });
 
+    $(".os_return_main_block_proper_btns_show").click(function() {
+        $(".os_return_main_block_proper_drop").addClass("active");
+        $(this).removeClass("active");
+        $(".os_return_main_block_proper_btns_hide").addClass("active");
+    });
+
+    $(".os_return_main_block_proper_btns_hide").click(function() {
+        $(".os_return_main_block_proper_drop").removeClass("active");
+        $(this).removeClass("active");
+        $(".os_return_main_block_proper_btns_show").addClass("active");
+    });
+
+    $(".os_return_main_block_unproper_btns_show").click(function() {
+        $(".os_return_main_block_unproper_drop").addClass("active");
+        $(this).removeClass("active");
+        $(".os_return_main_block_unproper_btns_hide").addClass("active");
+    });
+
+    $(".os_return_main_block_unproper_btns_hide").click(function() {
+        $(".os_return_main_block_unproper_drop").removeClass("active");
+        $(this).removeClass("active");
+        $(".os_return_main_block_unproper_btns_show").addClass("active");
+    });
+
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });
 
     $(".os_checkout_content_main_left_method_delivery_drop").overlayScrollbars({ });

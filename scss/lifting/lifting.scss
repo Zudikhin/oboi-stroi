@@ -1,0 +1,105 @@
+.os_lifting {
+  background-color: #fff;
+  padding-bottom: 32px;
+  padding-top: 16px;
+  @media (min-width: 1024px) {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  &_main {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &_block {
+      margin-top: 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+        margin-top: 0px;
+      }
+      & h3 {
+        font-family: "Roboto-Bold";
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+      }
+      &_unload {
+        &_item {
+          box-sizing: border-box;
+          padding: 16px;
+          background-color: #fefaf0;
+          border-radius: 3px;
+          margin-top: 16px;
+          @media (min-width: 1024px) {
+            margin-bottom: 16px;
+          }
+          & p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+            & b {
+              font-family: "Roboto-Bold";
+            }
+          }
+        }
+        &_text {
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+          margin-top: 16px;
+          @media (min-width: 1024px) {
+            margin-bottom: 8px;
+            margin-top: 0px;
+          }
+          @media (min-width: 1366px) {
+            margin-bottom: 16px;
+          }
+        }
+      }
+      &_hand {
+        & h4 {
+          font-family: "Roboto-Bold";
+          font-size: 18px;
+          line-height: 27px;
+          color: $black-color;
+          margin-top: 32px;
+          @media (min-width: 1366px) {
+            margin-bottom: 8px;
+          }
+        }
+        &_text {
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+          margin-top: 8px;
+          @media (min-width: 1366px) {
+            margin-bottom: 16px;
+            margin-top: 0px;
+          }
+        }
+        & ul {
+          & li {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 16px;
+            @media (min-width: 1366px) {
+              margin-bottom: 16px;
+              margin-top: 0px;
+            }
+            & img {
+              margin-right: 8px;
+              transform: translateY(1px);
+            }
+            & p {
+              font-size: 14px;
+              line-height: 21px;
+              color: $black-color;
+              & b {
+                font-family: "Roboto-Bold";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
