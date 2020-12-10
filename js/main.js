@@ -1253,6 +1253,14 @@ $(document).ready(function () {
         $(".os_make_order_main_block_item_drop_btns_show").addClass("active");
     });
 
+    $(".os_privacy_policy_main_block_item_header").click(function() {
+        $(this).parent().toggleClass('active');
+    });
+
+    $(".os_terms_of_use_main_block_item_header").click(function() {
+        $(this).parent().toggleClass('active');
+    });
+
 
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });
 

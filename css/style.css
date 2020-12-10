@@ -7747,11 +7747,17 @@ div:focus {
   border: 1px solid #c4cdd5;
   border-radius: 3px;
   position: relative;
-  height: 32px; }
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .os_cart_empty_content_main_bottom_form form input[type="text"] {
   font-size: 12px;
-  line-height: 30px;
+  line-height: 18px;
   color: #394a50;
   width: calc(100% - 48px);
   padding-left: 9px;
@@ -7768,8 +7774,7 @@ div:focus {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: url(../../img/header/header_desktop/search.svg) no-repeat center center;
-  background-size: cover; }
+  background: url(../../img/header/header_desktop/search.svg) no-repeat center center; }
 
 .os_cart_empty_content_main_bottom_form_droplist {
   border-right: 1px solid #c4cdd5;
@@ -12238,6 +12243,220 @@ div:focus {
   margin-right: 8px;
   -webkit-transform: translateY(2px);
   transform: translateY(2px); }
+
+.os_privacy_policy {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 32px; }
+
+@media (min-width: 1024px) {
+  .os_privacy_policy {
+    padding-top: 32px;
+    padding-bottom: 48px; } }
+
+@media (min-width: 768px) {
+  .os_privacy_policy_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.os_privacy_policy_main_block {
+  margin-top: 16px; }
+
+@media (min-width: 768px) {
+  .os_privacy_policy_main_block {
+    margin-left: 32px;
+    margin-top: 0px;
+    width: 100%; } }
+
+.os_privacy_policy_main_block h3 {
+  font-family: "Roboto-Bold";
+  font-size: 21px;
+  line-height: 32px;
+  color: #394a50;
+  margin-bottom: 16px; }
+
+.os_privacy_policy_main_block_item {
+  margin-bottom: 8px; }
+
+.os_privacy_policy_main_block_item_header {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px 56px 16px 16px;
+  border: 1px solid #dfe3e8;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 8px; }
+
+.os_privacy_policy_main_block_item_header h4 {
+  font-family: "Roboto-Bold";
+  font-size: 14px;
+  line-height: 21px;
+  color: #394a50; }
+
+.os_privacy_policy_main_block_item_header_arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.os_privacy_policy_main_block_item_header_arrow .black {
+  display: block; }
+
+.os_privacy_policy_main_block_item_header_arrow .white {
+  display: none; }
+
+.os_privacy_policy_main_block_item p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #394a50;
+  margin-bottom: 16px;
+  display: none; }
+
+.os_privacy_policy_main_block_item p b {
+  font-family: "Roboto-Bold"; }
+
+.os_privacy_policy_main_block_item a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #29c1d4; }
+
+.os_privacy_policy_main_block_item.active .os_privacy_policy_main_block_item_header {
+  background-color: #394a50;
+  border: 1px solid #394a50;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+.os_privacy_policy_main_block_item.active .os_privacy_policy_main_block_item_header h4 {
+  color: #ffffff; }
+
+.os_privacy_policy_main_block_item.active .os_privacy_policy_main_block_item_header_arrow .black {
+  display: none; }
+
+.os_privacy_policy_main_block_item.active .os_privacy_policy_main_block_item_header_arrow .white {
+  display: block; }
+
+.os_privacy_policy_main_block_item.active p {
+  display: block; }
+
+.os_terms_of_use {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 32px; }
+
+@media (min-width: 1024px) {
+  .os_terms_of_use {
+    padding-top: 32px;
+    padding-bottom: 48px; } }
+
+@media (min-width: 768px) {
+  .os_terms_of_use_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.os_terms_of_use_main_block {
+  margin-top: 16px; }
+
+@media (min-width: 768px) {
+  .os_terms_of_use_main_block {
+    margin-left: 32px;
+    margin-top: 0px;
+    width: 100%; } }
+
+.os_terms_of_use_main_block h3 {
+  font-family: "Roboto-Bold";
+  font-size: 21px;
+  line-height: 32px;
+  color: #394a50;
+  margin-bottom: 16px; }
+
+.os_terms_of_use_main_block_item {
+  margin-bottom: 8px; }
+
+.os_terms_of_use_main_block_item_header {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px 56px 16px 16px;
+  border: 1px solid #dfe3e8;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 8px; }
+
+.os_terms_of_use_main_block_item_header h4 {
+  font-family: "Roboto-Bold";
+  font-size: 14px;
+  line-height: 21px;
+  color: #394a50;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.os_terms_of_use_main_block_item_header_arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.os_terms_of_use_main_block_item_header_arrow .black {
+  display: block; }
+
+.os_terms_of_use_main_block_item_header_arrow .white {
+  display: none; }
+
+.os_terms_of_use_main_block_item_body {
+  display: none; }
+
+.os_terms_of_use_main_block_item_body_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px; }
+
+.os_terms_of_use_main_block_item_body_block span {
+  display: inline-block;
+  font-family: "Roboto-Bold";
+  margin-right: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #394a50; }
+
+.os_terms_of_use_main_block_item_body_block_info p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #394a50; }
+
+.os_terms_of_use_main_block_item_body_block_info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px; }
+
+.os_terms_of_use_main_block_item_body_block_info ul li img {
+  margin-right: 8px; }
+
+.os_terms_of_use_main_block_item.active .os_terms_of_use_main_block_item_header {
+  background-color: #394a50;
+  border: 1px solid #394a50;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+.os_terms_of_use_main_block_item.active .os_terms_of_use_main_block_item_header h4 {
+  color: #ffffff; }
+
+.os_terms_of_use_main_block_item.active .os_terms_of_use_main_block_item_header_arrow .black {
+  display: none; }
+
+.os_terms_of_use_main_block_item.active .os_terms_of_use_main_block_item_header_arrow .white {
+  display: block; }
+
+.os_terms_of_use_main_block_item.active .os_terms_of_use_main_block_item_body {
+  display: block; }
 
 .os_partners {
   padding-bottom: 40px; }

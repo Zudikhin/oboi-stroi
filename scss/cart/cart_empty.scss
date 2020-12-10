@@ -65,9 +65,11 @@
             border-radius: 3px;
             position: relative;
             height: 32px;
+            display: flex;
+            align-items: center;
             & input[type="text"] {
               font-size: 12px;
-              line-height: 30px;
+              line-height: 18px;
               color: $black-color;
               width: calc(100% - 48px);
               padding-left: 9px;
@@ -85,7 +87,6 @@
               transform: translateY(-50%);
               background: url(../../img/header/header_desktop/search.svg)
                 no-repeat center center;
-              background-size: cover;
             }
           }
           &_droplist {

@@ -1,0 +1,96 @@
+.os_privacy_policy {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  @media (min-width: 1024px) {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  &_main {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &_block {
+      margin-top: 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+        margin-top: 0px;
+        width: 100%;
+      }
+      & h3 {
+        font-family: "Roboto-Bold";
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+        margin-bottom: 16px;
+      }
+      &_item {
+        margin-bottom: 8px;
+        &_header {
+          position: relative;
+          box-sizing: border-box;
+          padding: 16px 56px 16px 16px;
+          border: 1px solid #dfe3e8;
+          border-radius: 3px;
+          cursor: pointer;
+          margin-bottom: 8px;
+          & h4 {
+            font-family: "Roboto-Bold";
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+          }
+          &_arrow {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            & .black {
+              display: block;
+            }
+            & .white {
+              display: none;
+            }
+          }
+        }
+        & p {
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+          margin-bottom: 16px;
+          display: none;
+          & b {
+            font-family: "Roboto-Bold";
+          }
+        }
+        & a {
+          font-size: 14px;
+          line-height: 21px;
+          color: $blue-color;
+        }
+        &.active {
+          & .os_privacy_policy_main_block_item_header {
+            background-color: #394a50;
+            border: 1px solid #394a50;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            & h4 {
+              color: $white-color;
+            }
+            &_arrow {
+              & .black {
+                display: none;
+              }
+              & .white {
+                display: block;
+              }
+            }
+          }
+          & p {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
