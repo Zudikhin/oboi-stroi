@@ -1,0 +1,94 @@
+.os_preorder {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  @media (min-width: 1024px) {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  &_main {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &_block {
+      margin-top: 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+        margin-top: 0px;
+        width: 100%;
+      }
+      & h3 {
+        font-family: "Roboto-Bold";
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+      }
+      &_item {
+        box-sizing: border-box;
+        padding: 16px;
+        background-color: #fefaf0;
+        border-radius: 3px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        & p {
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+          & b {
+            font-family: "Roboto-Bold";
+          }
+          &:last-child {
+            margin-top: 16px;
+          }
+        }
+      }
+      &_text {
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-color;
+        margin-bottom: 8px;
+        @media (min-width: 1024px) {
+          margin-bottom: 16px;
+        }
+      }
+      &_link {
+        border: 1px solid #dfe3e8;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 16px;
+        margin-top: 16px;
+        @media (min-width: 768px) {
+          width: 324px;
+        }
+        & h4 {
+          font-family: "Roboto-Bold";
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+        }
+        &_tel {
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+          display: inline-block;
+          margin-top: 8px;
+          & img {
+            margin-right: 8px;
+            transform: translateY(2px);
+          }
+        }
+        &_mail {
+          font-size: 14px;
+          line-height: 21px;
+          color: $blue-color;
+          display: inline-block;
+          margin-top: 8px;
+          & img {
+            margin-right: 8px;
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+}

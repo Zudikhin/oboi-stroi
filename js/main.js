@@ -1241,6 +1241,19 @@ $(document).ready(function () {
     });
 
 
+    $(".os_make_order_main_block_item_drop_btns_show").click(function() {
+        $(this).removeClass("active");
+        $(".os_make_order_main_block_item_drop_list").addClass("active");
+        $(".os_make_order_main_block_item_drop_btns_hide").addClass("active");
+    });
+
+    $(".os_make_order_main_block_item_drop_btns_hide").click(function() {
+        $(this).removeClass('active');
+        $(".os_make_order_main_block_item_drop_list").removeClass("active");
+        $(".os_make_order_main_block_item_drop_btns_show").addClass("active");
+    });
+
+
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });
 
     $(".os_checkout_content_main_left_method_delivery_drop").overlayScrollbars({ });
