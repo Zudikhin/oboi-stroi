@@ -22,9 +22,11 @@
         position: relative;
         box-sizing: border-box;
         height: 36px;
+        display: flex;
+        align-items: center;
         & input[type="text"] {
           font-size: 12px;
-          line-height: 32px;
+          line-height: 21px;
           color: $black-color;
           width: 75%;
           padding-left: 9px;
@@ -40,8 +42,8 @@
           top: 50%;
           -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-          background-repeat: no-repeat;
-          background: url(../../img/header/header_desktop/search.svg);
+          background: url(../../img/header/header_desktop/search.svg) no-repeat
+            center center;
         }
         &.focus {
           transition: all 0.2s linear;

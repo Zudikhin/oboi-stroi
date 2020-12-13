@@ -1174,7 +1174,12 @@ $(document).ready(function () {
 
 
     $(".os_navigation_feature .os_navigation_feature_drop_item_header").click(function() {
-        $(this).parent().toggleClass('active');
+        if($(this).parent().hasClass("active")) {
+            $(".os_navigation_feature_drop_item").removeClass('active');
+        } else {
+            $(".os_navigation_feature_drop_item").removeClass('active');
+            $(this).parent().addClass('active');
+        }
     });
 
     $(".os_navigation_feature_open").click(function() {
@@ -1261,6 +1266,26 @@ $(document).ready(function () {
         $(this).parent().toggleClass('active');
     });
 
+    $(".os_navigation_blog_open").click(function() {
+        $(this).parent().addClass('active');
+    });
+
+    $(".os_navigation_blog_drop_close").click(function() {
+        $(this).parent().parent().removeClass('active');
+    });
+
+    $(".os_popup_add_block_quantity_math").click(function() {
+        $(".os_popup_add").removeClass("active");
+        $(".os_popup_calculation").addClass("active");
+        $(".os_back_modal").addClass("active");
+    });
+
+    $(".os_popup_add_block_add").click(function() {
+        var valNumber = $(this).parent().find(".os_popup_add_block_quantity_numbers_number").text();
+        var intValNumber = parseInt(valNumber);
+        var resultVal = intValNumber + 1;
+        $(this).parent().find(".os_popup_add_block_quantity_numbers_number").text(resultVal);
+    });
 
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });
 

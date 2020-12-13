@@ -1,5 +1,10 @@
 .os_breadcrumbs {
   background: rgba(244, 245, 245, 0.5);
+  overflow-x: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
   &_list {
     padding: 5px 0px;
     & ul {
@@ -20,6 +25,7 @@
           margin-left: 0px;
         }
         &:last-child {
+          padding-right: 16px;
           &:after {
             display: none;
           }
@@ -28,6 +34,7 @@
           font-size: 12px;
           line-height: 20px;
           color: $grey-color;
+          white-space: nowrap;
         }
       }
     }

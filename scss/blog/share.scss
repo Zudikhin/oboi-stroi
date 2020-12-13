@@ -1,0 +1,24 @@
+.os_share {
+  background-color: #fff;
+  margin: 32px 0px;
+  &_main {
+    box-sizing: border-box;
+    padding: 32px 0px;
+    & h4 {
+      font-family: "Roboto-Bold";
+      font-size: 18px;
+      line-height: 27px;
+      color: $black-color;
+    }
+    & ul {
+      display: flex;
+      margin-top: 16px;
+      & li {
+        margin-right: 16px;
+      }
+    }
+    @media (min-width: 768px) {
+      margin-left: 270px;
+    }
+  }
+}

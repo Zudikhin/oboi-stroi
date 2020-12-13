@@ -95,7 +95,6 @@
             width: 0;
             &:checked {
               & ~ span {
-                font-family: "Roboto-Bold";
                 &:before {
                   border: 1px solid #29c1d4;
                 }

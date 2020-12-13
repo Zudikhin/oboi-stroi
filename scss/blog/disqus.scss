@@ -1,0 +1,14 @@
+.os_disqus {
+  background-color: #fff;
+  &_main {
+    @media (min-width: 768px) {
+      margin-left: 270px;
+    }
+    & img {
+      width: 100%;
+      @media (min-width: 1366px) {
+        width: auto;
+      }
+    }
+  }
+}

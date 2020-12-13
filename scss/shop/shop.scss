@@ -1542,6 +1542,67 @@
                     }
                   }
                 }
+                &-out {
+                  & .os_shop_content_block_main_catalog_list_item_block {
+                    & .os_top_info {
+                      &_out {
+                        margin-top: 8px;
+                        & p {
+                          font-family: "Roboto-Bold";
+                          font-size: 12px;
+                          line-height: 18px;
+                          color: #ff0000;
+                        }
+                      }
+                    }
+                    & .os_bottom {
+                      bottom: -50px;
+                      &_similar {
+                        display: flex;
+                        height: 36px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $white-color;
+                        background-color: #29c1d5;
+                        border-radius: 3px;
+                        @media (min-width: 768px) {
+                          width: 132px;
+                        }
+                        @media (min-width: 1366px) {
+                          margin-right: 44px;
+                        }
+                      }
+                    }
+                  }
+                  &.open {
+                    & .os_shop_content_block_main_catalog_list_item_block {
+                      & .os_top_slider {
+                        opacity: 1;
+                      }
+                      & .os_top_info {
+                        &_title {
+                          opacity: 1;
+                        }
+                        &_article {
+                          opacity: 1;
+                        }
+                        &_description {
+                          opacity: 1;
+                        }
+                        &_out {
+                          & p {
+                            font-family: "Roboto-Bold";
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #ff0000;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
             &.module {
@@ -1563,7 +1624,7 @@
                       right: -8px;
                       top: -8px;
                       bottom: -8px;
-                      z-index: -1;
+                      z-index: 0;
                       transition: all 0.3s linear;
                     }
                     &_slider {
@@ -1666,6 +1727,7 @@
                       }
                     }
                     &_info {
+                      position: relative;
                       &_title {
                         margin-top: 20px;
                         & a {
@@ -2034,6 +2096,73 @@
                         }
                         &_favorite {
                           display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+                &-out {
+                  & .os_shop_content_block_main_catalog_list_item_block {
+                    & .os_top_slider {
+                      opacity: 0.5;
+                    }
+                    & .os_top_info {
+                      &_title {
+                        opacity: 0.5;
+                      }
+                      &_article {
+                        opacity: 0.5;
+                      }
+                      &_description {
+                        opacity: 0.5;
+                      }
+                      &_out {
+                        margin-top: 8px;
+                        & p {
+                          font-family: "Roboto-Bold";
+                          font-size: 12px;
+                          line-height: 18px;
+                          color: #ff0000;
+                        }
+                      }
+                    }
+                    & .os_bottom {
+                      bottom: -50px;
+                      &_similar {
+                        display: flex;
+                        height: 36px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $white-color;
+                        background-color: #29c1d5;
+                        border-radius: 3px;
+                      }
+                    }
+                  }
+                  &.open {
+                    & .os_shop_content_block_main_catalog_list_item_block {
+                      & .os_top_slider {
+                        opacity: 1;
+                      }
+                      & .os_top_info {
+                        &_title {
+                          opacity: 1;
+                        }
+                        &_article {
+                          opacity: 1;
+                        }
+                        &_description {
+                          opacity: 1;
+                        }
+                        &_out {
+                          & p {
+                            font-family: "Roboto-Bold";
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #ff0000;
+                          }
                         }
                       }
                     }
@@ -2564,6 +2693,73 @@
                         }
                         &_favorite {
                           display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+                &-out {
+                  & .os_shop_content_block_main_catalog_list_item_block {
+                    & .os_top_slider {
+                      opacity: 0.5;
+                    }
+                    & .os_top_info {
+                      &_title {
+                        opacity: 0.5;
+                      }
+                      &_article {
+                        opacity: 0.5;
+                      }
+                      &_description {
+                        opacity: 0.5;
+                      }
+                      &_out {
+                        margin-top: 8px;
+                        & p {
+                          font-family: "Roboto-Bold";
+                          font-size: 12px;
+                          line-height: 18px;
+                          color: #ff0000;
+                        }
+                      }
+                    }
+                    & .os_bottom {
+                      bottom: -50px;
+                      &_similar {
+                        display: flex;
+                        height: 36px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $white-color;
+                        background-color: #29c1d5;
+                        border-radius: 3px;
+                      }
+                    }
+                  }
+                  &.open {
+                    & .os_shop_content_block_main_catalog_list_item_block {
+                      & .os_top_slider {
+                        opacity: 1;
+                      }
+                      & .os_top_info {
+                        &_title {
+                          opacity: 1;
+                        }
+                        &_article {
+                          opacity: 1;
+                        }
+                        &_description {
+                          opacity: 1;
+                        }
+                        &_out {
+                          & p {
+                            font-family: "Roboto-Bold";
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #ff0000;
+                          }
                         }
                       }
                     }
@@ -3751,6 +3947,77 @@
                             display: none;
                           }
                         }
+                      }
+                    }
+                  }
+                }
+                &-out {
+                  & .os_shop_content_block_main_catalog_list_item_block {
+                    & .os_top_slider {
+                      opacity: 0.5;
+                    }
+                    & .os_top_info {
+                      &_title {
+                        opacity: 0.5;
+                      }
+                      &_article {
+                        opacity: 0.5;
+                      }
+                      &_description {
+                        opacity: 0.5;
+                      }
+                      &_out {
+                        margin-top: 8px;
+                        & p {
+                          font-family: "Roboto-Bold";
+                          font-size: 12px;
+                          line-height: 18px;
+                          color: #ff0000;
+                        }
+                      }
+                    }
+                    & .os_bottom {
+                      bottom: -50px;
+                      display: none;
+                      &_similar {
+                        display: flex;
+                        height: 36px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $white-color;
+                        background-color: #29c1d5;
+                        border-radius: 3px;
+                      }
+                    }
+                  }
+                  &.open {
+                    & .os_shop_content_block_main_catalog_list_item_block {
+                      & .os_top_slider {
+                        opacity: 1;
+                      }
+                      & .os_top_info {
+                        &_title {
+                          opacity: 1;
+                        }
+                        &_article {
+                          opacity: 1;
+                        }
+                        &_description {
+                          opacity: 1;
+                        }
+                        &_out {
+                          & p {
+                            font-family: "Roboto-Bold";
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #ff0000;
+                          }
+                        }
+                      }
+                      & .os_bottom {
+                        display: block;
                       }
                     }
                   }
