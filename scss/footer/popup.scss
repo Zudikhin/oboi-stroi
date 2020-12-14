@@ -138,7 +138,7 @@
           transform: translateY(-50%);
           width: 6px;
           height: 10px;
-          background: url(../../img/arrow-right.svg);
+          background: url(../img/arrow-right.svg);
         }
         &_icon {
           margin-right: 8px;
@@ -310,7 +310,7 @@
                       top: 7px;
                       width: 6px;
                       height: 10px;
-                      background: url(../../img/arrow-right.svg);
+                      background: url(../img/arrow-right.svg);
                     }
                   }
                   &_block {
@@ -356,7 +356,7 @@
                   top: 7px;
                   width: 6px;
                   height: 10px;
-                  background: url(../../img/arrow-right.svg);
+                  background: url(../img/arrow-right.svg);
                 }
               }
             }
@@ -1344,7 +1344,7 @@
         top: 14px;
         width: 10px;
         height: 8px;
-        background: url(../../img/shop/check.svg);
+        background: url(../img/shop/check.svg);
       }
     }
   }
@@ -1491,7 +1491,7 @@
               top: 6px;
               width: 10px;
               height: 8px;
-              background: url(../../img/shop/check.svg);
+              background: url(../img/shop/check.svg);
             }
             & .palette_color {
               display: inline-block;
@@ -2103,7 +2103,7 @@
         position: absolute;
         right: 10px;
         top: 14px;
-        background: url(../../img/arrow-black.svg);
+        background: url(../img/arrow-black.svg);
         height: 6px;
         width: 10px;
         background-repeat: no-repeat;
@@ -3560,5 +3560,222 @@
     opacity: 1;
     z-index: 99;
     transition: all 0.2s linear;
+  }
+}
+
+.os_popup_review {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 256px;
+  background-color: white;
+  height: 100%;
+  overflow-y: scroll;
+  opacity: 0;
+  transition: all 0.2s fade-out;
+  scrollbar-width: none;
+  transform: translateX(-500px);
+  z-index: -1;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  &.active {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    z-index: 5;
+    transform: translateX(0px);
+  }
+  &_title {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 0px 10px 16px;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #29c1d4;
+    }
+    & h4 {
+      font-family: "Roboto-Bold";
+      font-size: 16px;
+      line-height: 24px;
+      color: $blue-color;
+    }
+  }
+  &_form {
+    & form {
+      margin: 16px 16px 0px 16px;
+      & fieldset {
+        border: none;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        margin-top: 8px;
+        & > input {
+          display: none;
+        }
+        & > label:before {
+          content: "";
+          background: url(../../img/review/icon_popup_empty_star.png);
+          width: 32px;
+          height: 32px;
+          display: block;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+        & > input:checked ~ label:before {
+          content: "";
+          background: url(../../img/review/icon_popup_star.png);
+          width: 32px;
+          height: 32px;
+          display: block;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    &_rating_text {
+      font-size: 14px;
+      line-height: 21px;
+      color: $black-color;
+    }
+    &_label_default {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      & span {
+        font-size: 12px;
+        line-height: 18px;
+        color: $black-color;
+      }
+      & input {
+        width: 100%;
+        height: 36px;
+        border: 1px solid #c4cdd5;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 0px 8px;
+        color: $black-color;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 5px;
+      }
+    }
+    &_label_check {
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      display: flex;
+      margin-top: 8px;
+      & > input {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        &:checked {
+          & ~ span {
+            &:before {
+              border: 1px solid #29c1d4;
+            }
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+      & span {
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-color;
+        padding-left: 24px;
+        &:before {
+          position: absolute;
+          content: "";
+          width: 14px;
+          height: 14px;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#ffffff),
+            to(#f9fafb)
+          );
+          background: -o-linear-gradient(top, #ffffff 0%, #f9fafb 100%);
+          background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+          border: 1px solid #c4cdd5;
+          border-radius: 3px;
+          left: 0;
+          top: 1px;
+          transition: all 0.2s linear;
+        }
+        &:after {
+          display: none;
+          position: absolute;
+          content: "";
+          left: 3px;
+          top: 6px;
+          width: 10px;
+          height: 8px;
+          background: url(../img/shop/check.svg);
+        }
+      }
+    }
+    &_label_bold {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+      & span {
+        font-family: "Roboto-Bold";
+        font-size: 12px;
+        line-height: 18px;
+        color: $black-color;
+      }
+      & textarea {
+        width: 100%;
+        height: 80px;
+        border: 1px solid #c4cdd5;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 18px;
+        color: $black-color;
+        padding-left: 8px;
+        padding-top: 4px;
+        margin-top: 5px;
+      }
+    }
+    &_submit {
+      width: 100%;
+      height: 36px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #29c1d5;
+      border-radius: 3px;
+      margin-top: 16px;
+      margin-bottom: 32px;
+      & span {
+        font-size: 14px;
+        line-height: 21px;
+        color: $white-color;
+      }
+      & img {
+        margin-right: 8px;
+      }
+    }
+  }
+  &_close {
+    display: none;
+  }
+  @media (min-width: 1025px) {
+    &_close {
+      display: block;
+    }
   }
 }

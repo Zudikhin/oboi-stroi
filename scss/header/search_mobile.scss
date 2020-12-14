@@ -38,11 +38,10 @@
           right: 10px;
           width: 18px;
           height: 18px;
-          top: 0;
           top: 50%;
           -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-          background: url(../../img/header/header_desktop/search.svg) no-repeat
+          background: url(../img/header/header_desktop/search.svg) no-repeat
             center center;
         }
         &.focus {

@@ -175,10 +175,9 @@
             right: 10px;
             width: 18px;
             height: 18px;
-            top: 0;
             top: 50%;
             transform: translateY(-50%);
-            background: url(../../img/header/header_desktop/search.svg);
+            background: url(../img/header/header_desktop/search.svg);
           }
           &:hover {
             transition: all 0.2s linear;
@@ -502,7 +501,7 @@
                   width: 6px;
                   height: 10px;
                   transform: translateY(-50%);
-                  background: url(../../img/arrow-right.svg);
+                  background: url(../img/arrow-right.svg);
                   opacity: 0;
                 }
               }

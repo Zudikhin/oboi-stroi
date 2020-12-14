@@ -57,6 +57,7 @@ $(document).ready(function () {
         $(".os_popup_sort").removeClass("active");
         $(".os_popup_order form").removeClass("invalid");
         $(".os_popup_filter").removeClass("active");
+        $(".os_popup_review").removeClass("active");
         $(".os_popup_registration").removeClass("active");
         $(".os_popup_menu_main").children().removeClass("open");
         $(".os_popup_menu_main .parent_drop").children().removeClass("open");
@@ -1285,6 +1286,71 @@ $(document).ready(function () {
         var intValNumber = parseInt(valNumber);
         var resultVal = intValNumber + 1;
         $(this).parent().find(".os_popup_add_block_quantity_numbers_number").text(resultVal);
+    });
+
+    $('.os_reviews_main_block_content_slider_block_list').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        fade: true,
+        prevArrow: $('.os_reviews_main_block_content_slider_block_btns_prev'),
+        nextArrow: $('.os_reviews_main_block_content_slider_block_btns_next')
+    });
+
+    $(".os_reviews_main_block_content_slider_block_list").on('afterChange', function(event, slick, currentSlide){
+        var arrSlider = $('.os_reviews_main_block_content_slider_block_list_item');
+        arrSlider.each(function() {
+            var indexSlide = $(this).attr("data-slick-index");
+            if(indexSlide != currentSlide) {
+               var video = $(this).find("iframe")[0].src;
+               $(this).find("iframe")[0].src = video;
+            }
+        });
+    });
+
+    $(".os_reviews_main_block_content_audio_list_item").click(function() {
+        if($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(this).find('audio')[0].pause();
+        } else {
+            $('.os_reviews_main_block_content_audio_list_item').find('audio').each(function() {
+                $(this)[0].pause();
+            });
+            $('.os_reviews_main_block_content_audio_list_item').removeClass("active");
+            $(this).addClass("active");
+            $(this).find('audio')[0].play();
+        }
+    });
+
+    $(".os_reviews_main_block_content_audio_buttons_show").click(function() {
+        $(".os_reviews_main_block_content_audio_list").addClass("open");
+        $(this).css("display", "none");
+        $(".os_reviews_main_block_content_audio_buttons_hide").css("display", "flex");
+    });
+
+    $(".os_reviews_main_block_content_audio_buttons_hide").click(function() {
+        $(".os_reviews_main_block_content_audio_list").removeClass("open");
+        $(this).css("display", "none");
+        $(".os_reviews_main_block_content_audio_buttons_show").css("display", "flex");
+    });
+
+    $(".os_reviews_main_block_feedback_btns_show").click(function() {
+        $(".os_reviews_main_block_feedback_list").addClass("open");
+        $(this).css("display", "none");
+        $(".os_reviews_main_block_feedback_btns_hide").css("display", "block");
+    });
+
+    $(".os_reviews_main_block_feedback_btns_hide").click(function() {
+        $(".os_reviews_main_block_feedback_list").removeClass("open");
+        $(this).css("display", "none");
+        $(".os_reviews_main_block_feedback_btns_show").css("display", "block");
+    });
+
+    $(".os_reviews_main_block_feedback_give").click(function() {
+        $(".os_popup_review").addClass("active");
+        $(".os_back_modal").addClass("active");
     });
 
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });
