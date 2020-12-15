@@ -1353,6 +1353,30 @@ $(document).ready(function () {
         $(".os_back_modal").addClass("active");
     });
 
+    $(".os_popup_review_close").click(function() {
+        $(".os_popup_review").removeClass("active");
+        $(".os_back_modal").removeClass("active");
+    });
+
+    // $('.os_popup_sertificate_block_for').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     fade: true,
+    //     asNavFor: '.os_popup_sertificate_block_nav'
+    //   });
+    //   $('.os_popup_sertificate_block_nav').slick({
+    //     slidesToShow: 5,
+    //     rows: 2,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.os_popup_sertificate_block_for',
+    //     dots: false,
+    //     centerMode: true,
+    //     focusOnSelect: true,
+    //     fade: true,
+    //   });
+
+
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });
 
     $(".os_checkout_content_main_left_method_delivery_drop").overlayScrollbars({ });
