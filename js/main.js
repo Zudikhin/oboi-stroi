@@ -1358,24 +1358,158 @@ $(document).ready(function () {
         $(".os_back_modal").removeClass("active");
     });
 
-    // $('.os_popup_sertificate_block_for').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     fade: true,
-    //     asNavFor: '.os_popup_sertificate_block_nav'
-    //   });
-    //   $('.os_popup_sertificate_block_nav').slick({
-    //     slidesToShow: 5,
-    //     rows: 2,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.os_popup_sertificate_block_for',
-    //     dots: false,
-    //     centerMode: true,
-    //     focusOnSelect: true,
-    //     fade: true,
-    //   });
+    $(".os_guarantees_main_block_warranty_quality ul li button").click(function() {
+        $(".os_back_white").addClass("active");
+        $(".os_popup_sertificate").addClass("active");
+        $("html").css("overflow", "hidden");
+        if($(".os_popup_sertificate_block_for_content_item").length > 11) {
+            $('.os_popup_sertificate_block_for_content').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                prevArrow: $('.os_popup_sertificate_block_for_btns_prev'),
+                nextArrow: $('.os_popup_sertificate_block_for_btns_next'),
+                asNavFor: '.os_popup_sertificate_block_nav_content'
+            });
+        
+            $('.os_popup_sertificate_block_nav_content').slick({
+                slidesToShow: 11,
+                slidesToScroll: 1,
+                asNavFor: '.os_popup_sertificate_block_for_content',
+                dots: false,
+                prevArrow: $('.os_popup_sertificate_block_nav_btns_prev'),
+                nextArrow: $('.os_popup_sertificate_block_nav_btns_next'),
+                focusOnSelect: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 11,
+                        }
+                    },
+                     {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 6,
+                        }
+                      },
+                      {
+                        breakpoint: 416,
+                        settings: {
+                            slidesToShow: 5,
+                        }
+                      },
+                      {
+                        breakpoint: 368,
+                        slidesToShow: 4,
+                      }
+                  ]
+            });
+        } else {
+            $(".os_popup_sertificate_block_nav").addClass("os_popup_sertificate_block_nav_before");
+            $('.os_popup_sertificate_block_for_content').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                prevArrow: $('.os_popup_sertificate_block_for_btns_prev'),
+                nextArrow: $('.os_popup_sertificate_block_for_btns_next'),
+                asNavFor: '.os_popup_sertificate_block_nav_content'
+            });
 
+            $('.os_popup_sertificate_block_nav_content').slick({
+                slidesToShow: 12,
+                slidesToScroll: 1,
+                asNavFor: '.os_popup_sertificate_block_for_content',
+                dots: false,
+                arrows: false,
+                focusOnSelect: true,
+                draggable: false
+            });
+        }
+    });
+
+    $(".os_guarantees_main_block_warranty_dealer ul li button").click(function() {
+        $(".os_back_white").addClass("active");
+        $(".os_popup_sertificate").addClass("active");
+        $("html").css("overflow", "hidden");
+        if($(".os_popup_sertificate_block_for_content_item").length > 11) {
+            $('.os_popup_sertificate_block_for_content').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                prevArrow: $('.os_popup_sertificate_block_for_btns_prev'),
+                nextArrow: $('.os_popup_sertificate_block_for_btns_next'),
+                asNavFor: '.os_popup_sertificate_block_nav_content'
+            });
+        
+            $('.os_popup_sertificate_block_nav_content').slick({
+                slidesToShow: 11,
+                slidesToScroll: 1,
+                asNavFor: '.os_popup_sertificate_block_for_content',
+                dots: false,
+                prevArrow: $('.os_popup_sertificate_block_nav_btns_prev'),
+                nextArrow: $('.os_popup_sertificate_block_nav_btns_next'),
+                focusOnSelect: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 11,
+                        }
+                    },
+                     {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 6,
+                        }
+                      },
+                      {
+                        breakpoint: 416,
+                        settings: {
+                            slidesToShow: 5,
+                        }
+                      },
+                      {
+                        breakpoint: 368,
+                        slidesToShow: 4,
+                      }
+                  ]
+            });
+        } else {
+            $(".os_popup_sertificate_block_nav").addClass("os_popup_sertificate_block_nav_before");
+            $('.os_popup_sertificate_block_for_content').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                prevArrow: $('.os_popup_sertificate_block_for_btns_prev'),
+                nextArrow: $('.os_popup_sertificate_block_for_btns_next'),
+                asNavFor: '.os_popup_sertificate_block_nav_content'
+            });
+
+            $('.os_popup_sertificate_block_nav_content').slick({
+                slidesToShow: 12,
+                slidesToScroll: 1,
+                asNavFor: '.os_popup_sertificate_block_for_content',
+                dots: false,
+                arrows: false,
+                focusOnSelect: true,
+                draggable: false
+            });
+        }
+    });
+
+    $(".os_back_white").click(function() {
+        $(this).removeClass("active");
+        $(".os_popup_sertificate").removeClass("active");
+        $("html").css("overflow", "auto");
+    });
+
+
+  
 
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });
 

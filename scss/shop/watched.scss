@@ -114,9 +114,13 @@
                     align-items: center;
                     &_prev {
                       left: 0;
+                      border-bottom-right-radius: 3px;
+                      border-top-right-radius: 3px;
                     }
                     &_next {
                       right: 0;
+                      border-bottom-left-radius: 3px;
+                      border-top-left-radius: 3px;
                     }
                   }
                 }

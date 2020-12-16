@@ -84,8 +84,8 @@
               height: 18px;
               top: 50%;
               transform: translateY(-50%);
-              background: url(../img/header/header_desktop/search.svg)
-                no-repeat center center;
+              background: url(../img/header/header_desktop/search.svg) no-repeat
+                center center;
             }
           }
           &_droplist {
@@ -100,7 +100,7 @@
             opacity: 0;
             transition: visibility 0s, opacity 0s linear;
             & h5 {
-              font-family: "ProximaNova-Bold";
+              font-family: "Roboto-Bold";
               font-size: 12px;
               line-height: 18px;
               color: $black-color;

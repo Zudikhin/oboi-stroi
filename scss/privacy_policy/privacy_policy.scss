@@ -57,7 +57,7 @@
           font-size: 14px;
           line-height: 21px;
           color: $black-color;
-          margin-bottom: 16px;
+          margin-top: 16px;
           display: none;
           & b {
             font-family: "Roboto-Bold";
@@ -69,6 +69,7 @@
           color: $blue-color;
         }
         &.active {
+          margin-bottom: 16px;
           & .os_privacy_policy_main_block_item_header {
             background-color: #394a50;
             border: 1px solid #394a50;

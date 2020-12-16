@@ -62,7 +62,7 @@
         opacity: 0;
         transition: visibility 0s, opacity 0s linear;
         & h5 {
-          font-family: "ProximaNova-Bold";
+          font-family: "Roboto-Bold";
           font-size: 12px;
           line-height: 18px;
           color: #394a50;
@@ -83,9 +83,6 @@
               color: #394a50;
               display: flex;
               align-items: center;
-              &:hover {
-                font-family: "ProximaNova-Bold";
-              }
               & img {
                 margin-right: 8px;
               }
