@@ -1,0 +1,142 @@
+.os_desktop_product_info {
+  display: none;
+  background-color: #fff;
+  margin-top: 24px;
+  box-sizing: border-box;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+  &_main {
+    @media (min-width: 1024px) {
+      width: 960px;
+    }
+    @media (min-width: 1366px) {
+      width: 966px;
+    }
+    &_top {
+      display: flex;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        height: 1px;
+        background-color: #dfe3e8;
+      }
+      &_item {
+        margin-right: 48px;
+        position: relative;
+        cursor: pointer;
+        & span {
+          font-family: "Roboto-Bold";
+          font-size: 18px;
+          line-height: 27px;
+          color: $black-color;
+        }
+        &:after {
+          content: "";
+          display: none;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 100%;
+          z-index: 2;
+          height: 2px;
+          background-color: #29c1d5;
+        }
+        &.active {
+          &:after {
+            display: block;
+          }
+        }
+      }
+    }
+    &_block {
+      &_item {
+        display: none;
+        &_description {
+          margin-top: 19px;
+          & p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+          }
+          &_sertificate {
+            background-color: transparent;
+            display: flex;
+            margin-top: 20px;
+            & img {
+              margin-right: 8px;
+            }
+            & span {
+              font-size: 14px;
+              line-height: 21px;
+              color: $blue-color;
+            }
+          }
+        }
+        &_delivery {
+          margin-top: 19px;
+          &_block {
+            margin-top: 32px;
+            & h4 {
+              font-size: 16px;
+              line-height: 24px;
+              color: $black-color;
+              font-family: "Roboto-Bold";
+            }
+            & p {
+              font-size: 14px;
+              line-height: 21px;
+              color: $black-color;
+              margin-top: 8px;
+            }
+            &:first-child {
+              margin-top: 0px;
+            }
+          }
+        }
+        &_payment {
+          margin-top: 19px;
+          & p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+            margin-top: 8px;
+          }
+        }
+        &_return {
+          margin-top: 19px;
+          &_default {
+            margin-top: 16px;
+          }
+          & p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+            & img {
+              margin-right: 8px;
+            }
+          }
+          &_grey {
+            box-sizing: border-box;
+            padding: 16px;
+            background-color: #f4f5f5;
+            border-radius: 3px;
+            margin-top: 16px;
+          }
+          &_last {
+            margin-top: 8px;
+          }
+        }
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.os_mob_condition_return {
+  background-color: #fff;
+  margin-top: 24px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 21px;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+  &_main {
+    & h4 {
+      font-family: "Roboto-Bold";
+      font-size: 18px;
+      line-height: 27px;
+      color: $black-color;
+    }
+    & p {
+      font-size: 14px;
+      line-height: 21px;
+      color: $black-color;
+      & img {
+        margin-right: 8px;
+      }
+    }
+    &_first {
+      margin-top: 8px;
+    }
+    &_default {
+      margin-top: 16px;
+    }
+    &_drop {
+      display: none;
+      &_item {
+        box-sizing: border-box;
+        padding: 16px;
+        background-color: #f4f5f5;
+        border-radius: 3px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        & p {
+          margin-top: 0px;
+        }
+      }
+    }
+    &_btns {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 12px;
+      & button {
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 21px;
+        color: $blue-color;
+      }
+      &_hide {
+        display: none;
+      }
+    }
+  }
+}

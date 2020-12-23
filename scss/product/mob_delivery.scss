@@ -1,0 +1,213 @@
+.os_mob_delivery {
+  margin-top: 24px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 21px;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+  &_main {
+    &_block {
+      & h4 {
+        font-family: "Roboto-Bold";
+        font-size: 18px;
+        line-height: 27px;
+        color: $black-color;
+      }
+      &_list {
+        display: flex;
+        flex-direction: column;
+        &_item {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-top: 16px;
+          @media (min-width: 768px) {
+            width: 288px;
+          }
+          &_name {
+            display: flex;
+            align-items: flex-start;
+            & img {
+              margin-right: 8px;
+              transform: translateY(2px);
+            }
+            &_text {
+              & .top {
+                font-size: 14px;
+                line-height: 21px;
+                color: $black-color;
+              }
+              & .bottom {
+                font-size: 14px;
+                line-height: 21px;
+                color: $grey-color;
+              }
+            }
+          }
+          &_description {
+            & p {
+              font-size: 14px;
+              line-height: 21px;
+              color: #39a008;
+              font-family: "Roboto-Bold";
+            }
+            &_free {
+              display: flex;
+              &_icon {
+                margin-left: 8px;
+                transform: translateY(2px);
+              }
+            }
+          }
+        }
+      }
+    }
+    &_free {
+      box-sizing: border-box;
+      background-color: #fefaf0;
+      border-radius: 3px;
+      padding: 8px 16px;
+      margin-top: 8px;
+      & .bold {
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-color;
+        font-family: "Roboto-Bold";
+      }
+      & p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-color;
+      }
+      @media (min-width: 768px) {
+        width: 288px;
+      }
+    }
+  }
+  &_show_scroll {
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    color: $blue-color;
+    margin-left: 16px;
+    margin-top: 12px;
+  }
+  &_scroll {
+    display: none;
+    overflow: auto;
+    scrollbar-width: none;
+    height: 26px;
+    margin-top: 20px;
+    position: relative;
+    @media (min-width: 768px) {
+      padding-left: 32px;
+      padding-right: 32px;
+      overflow: hidden;
+      &:after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 64px);
+        height: 1px;
+        background-color: #dfe3e8;
+        left: 32px;
+        bottom: 0;
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    &_item {
+      margin-left: 16px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 1px;
+        background-color: #dfe3e8;
+        bottom: 0px;
+        left: 0;
+      }
+      & span {
+        font-family: "Roboto-Bold";
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-color;
+        white-space: nowrap;
+        position: relative;
+        &:after {
+          display: none;
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          width: 100%;
+          height: 2px;
+          background-color: #29c1d4;
+        }
+      }
+      &:last-child {
+        padding-right: 16px;
+        &:before {
+          width: 100%;
+        }
+      }
+      &.active {
+        & span {
+          &:after {
+            display: block;
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        margin-left: 0px;
+        margin-right: 32px;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  &_list {
+    display: none;
+    position: relative;
+    &_item {
+      display: none;
+      &.active {
+        display: block;
+      }
+      & p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-color;
+        margin-top: 16px;
+        display: block;
+        & b {
+          font-family: "Roboto-Bold";
+        }
+      }
+    }
+  }
+  &_btns {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 12px;
+    @media (min-width: 768px) {
+      margin-top: 20px;
+      margin-left: 32px;
+    }
+    & button {
+      font-size: 14px;
+      line-height: 21px;
+      color: $blue-color;
+      background-color: transparent;
+    }
+    &_hide {
+      display: none;
+    }
+  }
+}

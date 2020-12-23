@@ -1,0 +1,279 @@
+.os_specifications {
+  background-color: #fff;
+  margin-top: 24px;
+  box-sizing: border-box;
+  &_main {
+    &_default {
+      padding-top: 16px;
+      padding-bottom: 21px;
+      @media (min-width: 1024px) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+      & h4 {
+        font-family: "Roboto-Bold";
+        font-size: 18px;
+        line-height: 27px;
+        color: $black-color;
+        @media (min-width: 768px) {
+          margin-bottom: 16px;
+        }
+      }
+      & ul {
+        & li {
+          margin-top: 12px;
+          display: none;
+          & .name {
+            font-family: "Roboto-Bold";
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+          }
+          & .value {
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+          }
+          & .link {
+            font-size: 14px;
+            line-height: 21px;
+            color: $blue-color;
+          }
+          &:first-child {
+            display: block;
+          }
+          &:nth-child(2) {
+            display: block;
+          }
+          &:nth-child(3) {
+            display: block;
+          }
+          &:nth-child(4) {
+            display: block;
+          }
+          &:nth-child(5) {
+            display: block;
+          }
+        }
+        @media (min-width: 768px) {
+          columns: 2;
+          & li {
+            margin-top: 0px;
+            margin-bottom: 12px;
+            width: calc(100% - 16px);
+          }
+        }
+        @media (min-width: 1024px) {
+          columns: 3;
+          & li {
+            display: block;
+          }
+        }
+        @media (min-width: 1366px) {
+          width: 964px;
+          & li {
+            width: 300px;
+          }
+        }
+        @media (min-width: 1920px) {
+          columns: 4;
+          width: 1264px;
+          & li {
+            width: 292px;
+          }
+        }
+      }
+      &_btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 12px;
+        & button {
+          background-color: transparent;
+          font-size: 14px;
+          line-height: 21px;
+          color: $blue-color;
+        }
+        &_open {
+          display: block;
+        }
+        &_hide {
+          display: none;
+        }
+        @media (min-width: 1024px) {
+          display: none;
+        }
+      }
+      &.open {
+        & ul {
+          li {
+            display: block;
+          }
+        }
+        & .os_specifications_main_default_btns {
+          &_open {
+            display: none;
+          }
+          &_hide {
+            display: block;
+          }
+        }
+      }
+    }
+    &_segmented {
+      padding-top: 16px;
+      padding-bottom: 21px;
+      & h4 {
+        font-family: "Roboto-Bold";
+        font-size: 18px;
+        line-height: 27px;
+        color: $black-color;
+        @media (min-width: 768px) {
+          margin-bottom: 16px;
+        }
+      }
+      &_list {
+        display: flex;
+        flex-direction: column;
+        &_item {
+          margin-top: 32px;
+          display: none;
+          &:first-child {
+            margin-top: 8px;
+            display: block;
+          }
+          &_header {
+            height: 30px;
+            background-color: #f4f5f5;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 8px;
+            & span {
+              font-family: "Roboto-Bold";
+              font-size: 14px;
+              line-height: 21px;
+              color: $black-color;
+            }
+          }
+          & ul {
+            margin-top: 16px;
+            & li {
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 12px;
+              & .name {
+                font-size: 14px;
+                line-height: 21px;
+                color: $black-color;
+                font-family: "Roboto-Bold";
+                margin-right: 4px;
+              }
+              & .value {
+                font-size: 14px;
+                line-height: 21px;
+                color: $black-color;
+              }
+              & .link {
+                font-size: 14px;
+                line-height: 21px;
+                color: $blue-color;
+              }
+              &:first-child {
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+      &_btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 12px;
+        & button {
+          background-color: transparent;
+          font-size: 14px;
+          line-height: 21px;
+          color: $blue-color;
+        }
+        &_open {
+          display: block;
+        }
+        &_hide {
+          display: none;
+        }
+      }
+      &.open {
+        & .os_specifications_main_segmented_list {
+          &_item {
+            display: block;
+          }
+        }
+        & .os_specifications_main_segmented_btns {
+          &_open {
+            display: none;
+          }
+          &_hide {
+            display: block;
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        &_list {
+          flex-direction: row;
+          flex-wrap: wrap;
+          &_item {
+            width: calc(50% - 16px);
+            margin-right: 32px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            &:first-child {
+              margin-top: 0px;
+            }
+            &:nth-child(2) {
+              display: block;
+            }
+            &:nth-child(2n) {
+              margin-right: 0px;
+            }
+          }
+        }
+        &_btns {
+          margin-top: -38px;
+        }
+      }
+      @media (min-width: 1024px) {
+        padding-top: 48px;
+        padding-bottom: 16px;
+        &_list {
+          &_item {
+            width: calc(33% - 19px);
+            display: block;
+            margin-bottom: 32px;
+            &:nth-child(2n) {
+              margin-right: 32px;
+            }
+            &:nth-child(3n + 3) {
+              margin-right: 0px;
+            }
+          }
+        }
+        &_btns {
+          display: none;
+        }
+      }
+      @media (min-width: 1366px) {
+        &_list {
+          &_item {
+            width: 300px;
+            &:nth-child(3n + 3) {
+              margin-right: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
