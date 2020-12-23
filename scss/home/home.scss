@@ -1,0 +1,137 @@
+.os_home {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-top: 32px;
+  position: relative;
+  padding-bottom: 6px;
+  @media (min-width: 1024px) {
+    padding-top: 48px;
+  }
+  &_main {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    &_block {
+      & h3 {
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+        font-family: "Roboto-Bold";
+        margin-bottom: 16px;
+      }
+      &_item {
+        margin-bottom: 30px;
+        & p {
+          font-size: 14px;
+          line-height: 21px;
+          color: $black-color;
+          font-family: "Roboto-Bold";
+          & img {
+            margin-right: 8px;
+            transform: translateY(3px);
+          }
+        }
+        &_list {
+          &_content {
+            display: flex;
+            flex-wrap: wrap;
+            &_item {
+              display: block;
+              margin-right: 8px;
+              box-sizing: border-box;
+              padding: 8px 16px;
+              margin-top: 8px;
+              background-color: #f4f5f5;
+              border-radius: 20px;
+              font-size: 14px;
+              line-height: 12px;
+              color: $black-color;
+            }
+          }
+          &_link {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 14px;
+            line-height: 21px;
+            color: $blue-color;
+          }
+          @media (min-width: 1366px) {
+            display: flex;
+            &_link {
+              margin-left: 16px;
+            }
+          }
+        }
+      }
+    }
+    &_brands {
+      display: none;
+      @media (min-width: 1024px) {
+        display: block;
+        min-width: 304px;
+        width: 304px;
+        margin-left: 32px;
+        overflow: hidden;
+      }
+      &_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        & h3 {
+          font-size: 21px;
+          line-height: 32px;
+          color: $black-color;
+          font-family: "Roboto-Bold";
+        }
+        &_btns {
+          display: flex;
+          & button {
+            border: 1px solid #dfe3e8;
+            box-sizing: border-box;
+            height: 36px;
+            width: 36px;
+            &:focus {
+              border: 1px solid #dfe3e8;
+            }
+          }
+          &_prev {
+            background-color: transparent;
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+          }
+          &_next {
+            background-color: transparent;
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
+          }
+        }
+      }
+      &_slider {
+        & .slick-list {
+          margin: 0px -16px !important;
+        }
+        &_item {
+          box-sizing: border-box;
+          width: calc(50% - 32px) !important;
+          padding: 16px;
+          border: 1px solid #dfe3e8;
+          margin: 0px 16px;
+          border-radius: 3px;
+          margin-bottom: 32px;
+          & img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+      &_link {
+        font-size: 14px;
+        line-height: 21px;
+        color: $blue-color;
+        display: inline-block;
+      }
+    }
+  }
+}

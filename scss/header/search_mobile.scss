@@ -98,6 +98,12 @@
         & .os_search_mobile_content_form_droplist {
           height: 268px;
           min-height: 268px;
+          position: absolute;
+          left: 0;
+          top: 36px;
+          width: calc(100% - 2px);
+          background-color: #fff;
+          z-index: 2;
           visibility: visible;
           opacity: 1;
           transition: visibility 0s, opacity 0.2s linear;

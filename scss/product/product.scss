@@ -172,6 +172,9 @@
             &-discount {
               background-color: #df0000;
             }
+            &-new {
+              background-color: #39a008;
+            }
             @media (min-width: 1024px) {
               display: none;
             }
@@ -404,6 +407,9 @@
             }
             &-hit {
               background-color: #f2be22;
+            }
+            &-new {
+              background-color: #39a008;
             }
           }
           &_showroom {

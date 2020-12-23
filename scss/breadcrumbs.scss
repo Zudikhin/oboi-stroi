@@ -7,6 +7,8 @@
   }
   &_list {
     padding: 5px 0px;
+    display: flex;
+    align-items: center;
     & ul {
       display: flex;
       & li {
@@ -37,6 +39,29 @@
           white-space: nowrap;
         }
       }
+    }
+    &_back {
+      display: flex;
+      position: relative;
+      align-items: center;
+      margin-right: 32px;
+      cursor: pointer;
+      &:after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 1px;
+        width: 1px;
+        height: 20px;
+        background-color: #cccccc;
+      }
+      & img {
+        transform: rotate(180deg);
+        margin-right: 8px;
+      }
+      font-size: 12px;
+      line-height: 20px;
+      color: $grey-color;
     }
   }
 }
