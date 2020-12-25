@@ -1,0 +1,88 @@
+.os_television {
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-top: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @media (min-width: 768px) {
+    padding-bottom: 116px;
+  }
+  @media (min-width: 1024px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  &_block {
+    position: relative;
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      @media (min-width: 768px) {
+        justify-content: flex-start;
+      }
+      & h3 {
+        font-family: "Roboto-Bold";
+        font-size: 21px;
+        line-height: 32px;
+        color: $black-color;
+      }
+      &_btns {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 30px;
+        & button {
+          border: 1px solid #dfe3e8;
+          box-sizing: border-box;
+          height: 36px;
+          width: 36px;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+          &:focus {
+            border: 1px solid #dfe3e8;
+          }
+        }
+        &_prev {
+          background-color: transparent;
+          border-bottom-left-radius: 3px;
+          border-top-left-radius: 3px;
+        }
+        &_next {
+          background-color: transparent;
+          border-bottom-right-radius: 3px;
+          border-top-right-radius: 3px;
+        }
+      }
+    }
+    &_list {
+      margin-top: 16px;
+      @media (min-width: 1024px) {
+        margin-top: 32px;
+      }
+      & .slick-list {
+        margin: 0 -10px;
+        @media (min-width: 768px) {
+          margin: 0 -17px;
+        }
+        & .slick-slide {
+          padding: 0 10px;
+          @media (min-width: 768px) {
+            padding: 0px 17px;
+          }
+        }
+        & .slick-track {
+          margin-left: 0px !important;
+        }
+      }
+      &_item {
+        & a {
+          & img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}

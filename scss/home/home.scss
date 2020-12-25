@@ -131,6 +131,9 @@
         line-height: 21px;
         color: $blue-color;
         display: inline-block;
+        @media (min-width: 1024px) {
+          transform: translateY(-18px);
+        }
       }
     }
   }
