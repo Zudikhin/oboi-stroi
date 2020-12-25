@@ -815,17 +815,17 @@ $(document).ready(function () {
         }, 1500);
     });
 
-    $('.os_shop_content_block_sidebar input[type="checkbox"]').change(function() {
-        
-        var id = $(this).parent().attr('id');
-        var offsetTop = $("#"+id).offset().top;
-        var offsetLeft = $("#"+id).offset().left;
+    $('.os_shop_content_block_sidebar input').change(function() {
+        var offsetTop = $(this).parent().offset().top;
+        var offsetLeft = $(this).parent().offset().left;
+        $(".os_shop_content_block_sidebar_show").addClass("active");
         $(".os_shop_content_block_sidebar_show").css({
-            "opacity": "1",
             "top": offsetTop - 310 + "px",
             "left": offsetLeft + 225 + "px"
         });
     });
+
+
 
     $(".os_cart_content_main_list_item_left_quantity_minus").on( "click", function(e) {
         var valNumber = $(this).parent().find(".os_cart_content_main_list_item_left_quantity_number").text();
