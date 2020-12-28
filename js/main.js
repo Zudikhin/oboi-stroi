@@ -70,6 +70,7 @@ $(document).ready(function () {
         $(".os_popup_registration").removeClass("active");
         $(".os_popup_color").removeClass("active");
         $(".os_popup_companion").removeClass("active");
+        $("body").removeClass("stop_scrolling");
         $(".os_popup_menu_main").children().removeClass("open");
         $(".os_popup_menu_main .parent_drop").children().removeClass("open");
         $(".os_popup_menu_main .parent_drop .parent_drop_block_list_sub").children().removeClass("open");
@@ -266,9 +267,7 @@ $(document).ready(function () {
     $(".filter_btns_filter").click(function() {
         $(".os_popup_filter").addClass("active");
         $(".os_back_modal").addClass("active");
-        $('html, body').on('touchstart touchmove', function(e){ 
-            e.preventDefault(); 
-       });
+        $("body").addClass("stop_scrolling");
     });
 
     $(".os_shop_content_block_sidebar_item_header").click(function() {

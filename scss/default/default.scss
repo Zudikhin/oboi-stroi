@@ -3,9 +3,9 @@
   padding: 0;
   position: relative;
   background-color: #f4f5f5;
-  &.modal_open {
-    overflow-y: hidden;
-    position: fixed;
+  &.stop_scrolling {
+    overflow: hidden;
+    height: 100%;
   }
 }
 .os_button {

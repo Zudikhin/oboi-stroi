@@ -18,9 +18,9 @@
   position: relative;
   background-color: #f4f5f5; }
 
-.os_body.modal_open {
-  overflow-y: hidden;
-  position: fixed; }
+.os_body.stop_scrolling {
+  overflow: hidden;
+  height: 100%; }
 
 .os_button {
   border: none;
