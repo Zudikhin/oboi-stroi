@@ -23234,7 +23234,8 @@ div:focus {
   position: fixed;
   bottom: 0;
   background-color: #fff;
-  width: 256px; }
+  width: 256px;
+  z-index: 2; }
 
 .os_popup_filter_btns_drop {
   width: 98px;
