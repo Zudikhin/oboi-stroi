@@ -144,6 +144,7 @@
         }
         &::-webkit-scrollbar {
           width: 0;
+          height: 0;
         }
         &_item {
           min-width: 48px;
@@ -288,6 +289,7 @@
           height: 52px;
           &::-webkit-scrollbar {
             width: 0;
+            height: 0;
           }
           &_img {
             height: 48px;

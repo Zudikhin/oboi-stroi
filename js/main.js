@@ -265,6 +265,7 @@ $(document).ready(function () {
     $(".filter_btns_filter").click(function() {
         $(".os_popup_filter").addClass("active");
         $(".os_back_modal").addClass("active");
+        $("body").addClass("modal_open");
     });
 
     $(".os_shop_content_block_sidebar_item_header").click(function() {
@@ -1205,8 +1206,7 @@ $(document).ready(function () {
     $(".os_delivery_main_block_options_item").click(function() {
         var target = $(this).attr("data-target");
         $('html, body').animate({
-            scrollTop: $(`#${target}`).offset().top - $(window).height() / 2
-        }, 1500);
+            scrollTop: $(`#${target}`).offset().top - 56}, 1500);
     });
 
     $(".os_return_main_block_proper_btns_show").click(function() {

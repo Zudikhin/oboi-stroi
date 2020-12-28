@@ -473,10 +473,6 @@
               width: 0;
               &:checked {
                 & ~ p {
-                  font-family: "Roboto-Bold";
-                  & a {
-                    font-family: "Roboto-Bold";
-                  }
                   &:before {
                     border: 1px solid #29c1d4;
                   }

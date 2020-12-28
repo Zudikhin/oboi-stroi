@@ -1385,7 +1385,7 @@
         height: 1px;
       }
       & .arrow {
-        transform: rotate(-180deg);
+        transform: rotate(0deg);
         transition: all 0.2s linear;
       }
     }
@@ -1532,7 +1532,7 @@
           display: none;
         }
         & .arrow {
-          transform: rotate(0deg);
+          transform: rotate(-180deg);
           transition: all 0.2s linear;
         }
       }
@@ -4086,6 +4086,7 @@
             margin-left: 0px;
             margin-right: 0px;
             transform: none !important;
+            width: 100% !important;
           }
           & .slick-list {
             width: 100%;

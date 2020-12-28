@@ -137,7 +137,8 @@
               cursor: pointer;
               justify-content: flex-start;
               &_btns {
-                & button {
+                &_pause {
+                  display: none;
                   width: 16px;
                   height: 16px;
                   background-color: transparent;
@@ -150,9 +151,6 @@
                   &:focus {
                     border: 1px solid #29c1d5;
                   }
-                }
-                &_pause {
-                  display: none;
                   &:before {
                     content: "";
                     position: absolute;
@@ -175,10 +173,10 @@
                   }
                 }
                 &_play {
-                  display: flex;
-                  & img {
-                    transform: translateX(1px);
-                  }
+                  width: 16px;
+                  height: 16px;
+                  transform: translateY(2px);
+                  background-color: transparent;
                 }
               }
               & audio {

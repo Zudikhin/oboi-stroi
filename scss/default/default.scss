@@ -3,6 +3,10 @@
   padding: 0;
   position: relative;
   background-color: #f4f5f5;
+  &.modal_open {
+    overflow: hidden;
+    position: fixed;
+  }
 }
 .os_button {
   border: none;

@@ -1,9 +1,9 @@
 .os_breadcrumbs {
-  background: rgba(244, 245, 245, 0.5);
   overflow-x: scroll;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     width: 0;
+    height: 0;
   }
   &_list {
     padding: 5px 0px;
@@ -18,7 +18,7 @@
           content: "";
           position: absolute;
           right: -15px;
-          top: 7px;
+          top: 6px;
           width: 5px;
           height: 8px;
           background: url(../img/breadcrumbs/arrow-right.svg);
