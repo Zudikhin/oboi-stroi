@@ -20,7 +20,7 @@
 
 .os_body.modal_open {
   overflow-y: hidden;
-  position: absolute; }
+  position: fixed; }
 
 .os_button {
   border: none;

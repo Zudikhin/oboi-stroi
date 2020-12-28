@@ -75,6 +75,7 @@ $(document).ready(function () {
         $(".os_popup_menu_main .parent_drop").children().removeClass("open");
         $(".os_popup_menu_main .parent_drop .parent_drop_block_list_sub").children().removeClass("open");
         $("html").css("overflow", "auto");
+        $(".os_shop_content_block_main_catalog_list_item_block .os_top .os_top_slider_block").slick('refresh');
     });
 
     $(".os_back_modal_second").click(function() {
