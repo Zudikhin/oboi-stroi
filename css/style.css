@@ -21514,9 +21514,7 @@ div:focus {
   top: 0;
   left: 0;
   z-index: 4;
-  opacity: 0;
-  -webkit-transition: all 0.2s fade-in;
-  transition: all 0.2s fade-in; }
+  opacity: 0; }
 
 @media (min-width: 1366px) {
   .os_back_modal {
@@ -21540,9 +21538,7 @@ div:focus {
 
 .os_back_modal.active {
   visibility: visible;
-  opacity: 1;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
+  opacity: 1; }
 
 .os_back_modal_second {
   background-color: rgba(0, 0, 0, 0.7);
