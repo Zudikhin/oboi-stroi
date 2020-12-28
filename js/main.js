@@ -267,7 +267,12 @@ $(document).ready(function () {
     $(".filter_btns_filter").click(function() {
         $(".os_popup_filter").addClass("active");
         $(".os_back_modal").addClass("active");
-        $("html").addClass("stop_scrolling");
+        $("body").addClass("stop_scrolling");
+        $("body").on('scroll touchmove mousewheel', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        });
     });
 
     $(".os_shop_content_block_sidebar_item_header").click(function() {

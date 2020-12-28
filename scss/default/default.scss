@@ -1,15 +1,14 @@
-html {
+.os_body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  background-color: #f4f5f5;
   &.stop_scrolling {
     overflow: hidden;
     height: 100%;
     max-height: 100%;
   }
-}
-.os_body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  background-color: #f4f5f5;
 }
 .os_button {
   border: none;
