@@ -23,7 +23,7 @@
   overflow: hidden;
   height: 100%;
   max-height: 100%;
-  position: absolute; }
+  position: fixed; }
 
 .os_button {
   border: none;
