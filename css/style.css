@@ -19,7 +19,8 @@
   background-color: #f4f5f5; }
 
 .os_body.modal_open {
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  position: absolute; }
 
 .os_button {
   border: none;
