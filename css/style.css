@@ -19,8 +19,7 @@
   background-color: #f4f5f5; }
 
 .os_body.modal_open {
-  overflow: hidden;
-  position: fixed; }
+  overflow-y: hidden; }
 
 .os_button {
   border: none;

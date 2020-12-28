@@ -4,8 +4,8 @@
   position: relative;
   background-color: #f4f5f5;
   &.modal_open {
-    overflow: hidden;
-    position: fixed;
+    overflow-y: hidden;
+    // position: fixed;
   }
 }
 .os_button {
