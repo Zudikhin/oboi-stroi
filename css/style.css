@@ -9830,6 +9830,12 @@ div:focus {
   line-height: 32px;
   color: #394a50; }
 
+.os_nav {
+  max-height: 748px;
+  max-width: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
 .os_nav_item {
   background-color: #edf2f6;
   border-radius: 3px;
@@ -9973,6 +9979,13 @@ div:focus {
     display: block; }
   .os_nav_item_header .arrow {
     display: none; } }
+
+.os_nav.open {
+  max-width: 20px;
+  max-height: 20px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s max-width 0.2s ease-in;
+  transition: max-height 0.2s max-width 0.2s ease-in; }
 
 .os_navigation_feature {
   position: fixed;

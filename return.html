@@ -623,6 +623,62 @@
       </div>
     </div>
 
+    <div class="os_navigation_feature">
+      <button class="os_button os_navigation_feature_open">
+        <img src="img/navigation/icon_btn.svg" alt="">
+      </button>
+
+      <div class="os_navigation_feature_drop">
+        <div class="os_navigation_feature_drop_item active">
+          <div class="os_navigation_feature_drop_item_header">
+            <h4 class="os_h"><img src="img/navigation/icon_delivery.svg" alt="">Доставка и возврат</h4>
+            <img class="arrow" src="img/navigation/icon_arrow.svg" alt="">
+          </div>
+          <ul class="os_ul">
+            <li><a class="os_a" href="#">Контакты</a></li>
+            <li><a class="os_a" href="#">Наш шоу-рум</a></li>
+            <li><a class="os_a" href="#">Доставка и оплата</a></li>
+            <li><a class="os_a" href="#">Разгрузка и подъем</a></li>
+            <li class="active"><a class="os_a" href="#">Возврат товара</a></li>
+          </ul>
+        </div>
+        
+        <div class="os_navigation_feature_drop_item">
+          <div class="os_navigation_feature_drop_item_header">
+            <h4 class="os_h"><img src="img/navigation/icon_company.svg" alt="">Компания</h4>
+            <img class="arrow" src="img/navigation/icon_arrow.svg" alt="">
+          </div>
+          <ul class="os_ul">
+            <li><a class="os_a" href="#">О компании</a></li>
+            <li><a class="os_a" href="#">Сотрудничество</a></li>
+            <li><a class="os_a" href="#">Вакансии</a></li>
+            <li><a class="os_a" href="#">Отзывы о нас</a></li>
+            <li><a class="os_a" href="#">Гарантии</a></li>
+          </ul>
+        </div>
+
+        <div class="os_navigation_feature_drop_item">
+          <div class="os_navigation_feature_drop_item_header">
+            <h4 class="os_h"><img src="img/navigation/icon_order.svg" alt="">Заказ</h4>
+                <img class="arrow" src="img/navigation/icon_arrow.svg" alt="">
+          </div>
+          <ul class="os_ul">
+            <li><a class="os_a" href="#">Как сделать заказ</a></li>
+            <li><a class="os_a" href="#">Предзаказ товара с фабрики</a></li>
+            <li><a class="os_a" href="#">Политика конфиденциальности</a></li>
+            <li><a class="os_a" href="#">Отзывы о нас</a></li>
+            <li><a class="os_a" href="#">Публичная оферта</a></li>
+          </ul>
+        </div>
+
+        <button class="os_button os_navigation_feature_drop_close">
+          <img src="img/navigation/double_arrow.svg" alt="">
+        </button>
+
+      </div>
+      
+    </div>
+
    <section class="os_return">
      <div class="os_container">
        <div class="os_return_main">
@@ -4257,6 +4313,20 @@
     <script src="js/OverlayScrollbars.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+      $(window).scroll(function(){
+        if($(document).width() < 767) {
+          var offsetScroll = $(this).scrollTop();
+          var offsetNavBlog = $(".os_nav_blog").offset().top;
+          if(offsetScroll > offsetNavBlog) {
+            $(".os_navigation_feature").css("display", "block");
+          } else {
+            $(".os_navigation_feature").css("display", "none");
+          }
+        }
+      });
+    </script>
    
   </body>
 </html>

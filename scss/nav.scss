@@ -1,4 +1,7 @@
 .os_nav {
+  max-height: 748px;
+  max-width: 100%;
+  transition: all 0.2s ease-in;
   &_item {
     background-color: #edf2f6;
     border-radius: 3px;
@@ -122,6 +125,12 @@
         }
       }
     }
+  }
+  &.open {
+    max-width: 20px;
+    max-height: 20px;
+    overflow: hidden;
+    transition: max-height 0.2s max-width 0.2s ease-in;
   }
 }
 .os_navigation_feature {
