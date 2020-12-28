@@ -268,6 +268,10 @@ $(document).ready(function () {
         $(".os_popup_filter").addClass("active");
         $(".os_back_modal").addClass("active");
         $("body").addClass("stop_scrolling");
+        $('body').bind('touchmove', function(e){
+            e.preventDefault();
+        });
+        $('body').unbind('touchmove');
     });
 
     $(".os_shop_content_block_sidebar_item_header").click(function() {
