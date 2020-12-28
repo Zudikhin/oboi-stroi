@@ -70,6 +70,7 @@ $(document).ready(function () {
         $(".os_popup_registration").removeClass("active");
         $(".os_popup_color").removeClass("active");
         $(".os_popup_companion").removeClass("active");
+        $("body").removeClass("modal_open");
         $(".os_popup_menu_main").children().removeClass("open");
         $(".os_popup_menu_main .parent_drop").children().removeClass("open");
         $(".os_popup_menu_main .parent_drop .parent_drop_block_list_sub").children().removeClass("open");
