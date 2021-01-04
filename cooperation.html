@@ -4157,7 +4157,7 @@
       $(window).scroll(function(){
         if($(document).width() < 767) {
           var offsetScroll = $(this).scrollTop();
-          var offsetNavBlog = $(".os_nav_blog").offset().top;
+          var offsetNavBlog = $(".os_nav_blog").offset().top - 70;
           if(offsetScroll > offsetNavBlog) {
             $(".os_navigation_feature").css("display", "block");
           } else {

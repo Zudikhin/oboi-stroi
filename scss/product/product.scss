@@ -367,7 +367,7 @@
           background-color: rgba(57, 74, 80, 0.75);
           position: absolute;
           width: 100%;
-          height: calc(100% - 3.5px);
+          height: 100%;
           left: 0;
           top: 0;
           display: flex;
@@ -414,7 +414,7 @@
           }
           &_showroom {
             position: absolute;
-            top: calc(100% - 30px);
+            bottom: 0;
             left: 0;
             width: 100%;
             padding: 4px 0px;

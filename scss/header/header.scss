@@ -123,8 +123,10 @@
     display: none;
     @media (min-width: 1024px) {
       display: block;
+      position: relative;
       background-color: #fff;
       padding-bottom: 16px;
+      z-index: 11;
     }
     &_top {
       display: flex;
@@ -936,7 +938,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 11;
     padding-bottom: 0px;
     &_top {
       display: none;

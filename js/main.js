@@ -41,6 +41,13 @@ $(document).ready(function () {
         $("body").removeClass("stop_scrolling");
     });
 
+    $(document).mouseup(function (e) {
+        var selectPopupCalc = $(".os_popup_calculation_select");
+        if (!selectPopupCalc.is(e.target) && selectPopupCalc.has(e.target).length === 0) {
+            $('.os_popup_calculation_select').removeClass("active");
+        }
+    });
+
     $(".os_header_mobile_content_left_burger").click(function() {
         $(".os_back_modal").addClass("active");
         $(".os_popup_menu").addClass("active");
@@ -822,18 +829,30 @@ $(document).ready(function () {
     $(".os_brands_block_anchors_list_item").click(function() {
         var target = $(this).attr("data-target");
         $('html, body').animate({
-            scrollTop: $(`#${target}`).offset().top - $(window).height() / 2
-        }, 1500);
+            scrollTop: $(`#${target}`).offset().top}, 1500);
     });
 
     $('.os_shop_content_block_sidebar input').change(function() {
         var offsetTop = $(this).parent().offset().top;
         var offsetLeft = $(this).parent().offset().left;
         $(".os_shop_content_block_sidebar_show").addClass("active");
-        $(".os_shop_content_block_sidebar_show").css({
-            "top": offsetTop - 310 + "px",
-            "left": offsetLeft + 225 + "px"
-        });
+        // $(".os_shop_content_block_sidebar_show").css({
+        //     "top": offsetTop - 310 + "px",
+        //     "left": offsetLeft + 225 + "px"
+        // });
+
+        if($(document).width() < 1287) {
+            $(".os_shop_content_block_sidebar_show").css({
+                "top": offsetTop - 363 + "px",
+                "left": 255 + "px"
+            });
+        } else {
+            $(".os_shop_content_block_sidebar_show").css({
+                "top": offsetTop - 310 + "px",
+                "left": 255 + "px"
+            });
+        }
+        
     });
 
 
@@ -2202,12 +2221,12 @@ $(document).ready(function () {
   
      $(".os_product_main_title_info_rating").click(function() {
         $('html, body').animate({
-            scrollTop: $(".os_product_review").offset().top - $(window).height() / 2}, 2000);
+            scrollTop: $(".os_product_review").offset().top}, 2000);
      });
 
     $(".os_product_main_content_text_block_all_characteristic").click(function() {
         $('html, body').animate({
-            scrollTop: $(".os_specifications_main").offset().top - $(window).height() / 2}, 2000);
+            scrollTop: $(".os_specifications_main").offset().top}, 2000);
     });
 
     // $(".os_product_main_content_text_block_all_characteristic").click(function() {
@@ -2217,8 +2236,7 @@ $(document).ready(function () {
 
     $(".os_product_main_content_text_other_ways").click(function() {
         $('html, body').animate({
-            scrollTop: $(".os_desktop_product_info").offset().top - $(window).height() / 2
-        }, 2000);
+            scrollTop: $(".os_desktop_product_info").offset().top }, 2000);
         $(".os_desktop_product_info_main_top_item").removeClass("active");
         $("#desktopDelivery").addClass("active");
         $(".os_desktop_product_info_main_block_item").removeClass("active");
