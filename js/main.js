@@ -125,14 +125,14 @@ $(document).ready(function () {
         $(this).parent().removeClass("focus");
     });
 
-    $('.os_banner_slider_content').slick({
+    $('.os_main_slider_content').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         arrows: true,
-        prevArrow: $('.os_banner_slider_prev'),
-        nextArrow: $('.os_banner_slider_next')
+        prevArrow: $('.os_main_slider_prev'),
+        nextArrow: $('.os_main_slider_next')
     });
 
     $('.os_partners_slider').slick({

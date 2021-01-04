@@ -1,4 +1,4 @@
-.os_banner {
+.os_main {
   background-color: #fff;
   &_slider {
     position: relative;
@@ -104,14 +104,14 @@
       }
     }
     &:hover {
-      & .os_banner_slider_prev {
+      & .os_main_slider_prev {
         opacity: 0;
         transition: all 0.2s linear;
         @media (min-width: 768px) {
           opacity: 1;
         }
       }
-      & .os_banner_slider_next {
+      & .os_main_slider_next {
         opacity: 0;
         transition: all 0.2s linear;
         @media (min-width: 768px) {

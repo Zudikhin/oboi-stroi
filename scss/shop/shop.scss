@@ -3517,6 +3517,7 @@
                       margin-top: 16px;
                       @media (min-width: 768px) {
                         position: absolute;
+                        z-index: 1;
                         &:before {
                           content: "";
                         }
@@ -3524,6 +3525,7 @@
                       &_btns {
                         display: flex;
                         flex-direction: row;
+                        position: relative;
                         @media (min-width: 768px) {
                           padding-top: 44px;
                         }
