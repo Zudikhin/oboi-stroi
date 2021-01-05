@@ -1018,6 +1018,9 @@
                               border-radius: 50%;
                               background-color: #cccccc;
                               cursor: pointer;
+                              &:focus {
+                                outline: none;
+                              }
                             }
                             &.slick-active {
                               & button {
@@ -1675,6 +1678,9 @@
                               border-radius: 50%;
                               background-color: #cccccc;
                               cursor: pointer;
+                              &:focus {
+                                outline: none;
+                              }
                             }
                             &.slick-active {
                               & button {
@@ -2240,6 +2246,9 @@
                               border-radius: 50%;
                               background-color: #cccccc;
                               cursor: pointer;
+                              &:focus {
+                                outline: none;
+                              }
                             }
                             &.slick-active {
                               & button {
@@ -2899,6 +2908,9 @@
                                 border-radius: 50%;
                                 background-color: #cccccc;
                                 cursor: pointer;
+                                &:focus {
+                                  outline: none;
+                                }
                               }
                               &.slick-active {
                                 & button {

@@ -44,6 +44,7 @@
           background-color: transparent;
           border-bottom-left-radius: 3px;
           border-top-left-radius: 3px;
+          border-right: none !important;
         }
         &_next {
           background-color: transparent;
@@ -155,6 +156,9 @@
                       border-radius: 50%;
                       background-color: #cccccc;
                       cursor: pointer;
+                      &:focus {
+                        outline: none;
+                      }
                     }
                     &.slick-active {
                       & button {

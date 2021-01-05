@@ -67,7 +67,6 @@
           }
           &_block {
             box-sizing: border-box;
-            //padding: 9px 16px;
             padding: 7px 16px 11px 16px;
             background-color: #f4f5f5;
             border-radius: 20px;
@@ -82,6 +81,16 @@
               align-items: center;
               background-color: transparent;
               margin-right: 0px;
+              &:before {
+                content: "";
+                position: absolute;
+                left: -1px;
+                top: 0px;
+                height: 100%;
+                width: calc(100% + 1px);
+                opacity: 0;
+                background-color: #9ca4a7;
+              }
               &:after {
                 content: "";
                 position: absolute;
@@ -101,6 +110,7 @@
               line-height: 12px;
               color: $black-color;
               white-space: nowrap;
+              position: relative;
             }
           }
           &:last-child {
@@ -119,8 +129,13 @@
           }
           &:hover {
             @media (min-width: 1025px) {
-              background-color: $grey-color;
+              // background-color: $grey-color;
               transition: all 0.2s linear;
+              & .os_brands_block_anchors_list_item_block {
+                &:before {
+                  opacity: 1;
+                }
+              }
               & span {
                 color: $white-color;
               }
