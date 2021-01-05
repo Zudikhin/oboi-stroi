@@ -29,7 +29,7 @@
               </div>
 
               <a class="os_header_mobile_content_left_logo" href="/">
-                <img src="img/header/header_mobile/Logo.svg" alt="">
+                <img src="img/header/header_mobile/logo.svg" alt="">
               </a>
 
             </div>
@@ -68,7 +68,7 @@
           <div class="os_header_desktop_top">
 
             <a class="os_header_desktop_top_logo" href="/">
-              <img src="img/header/header_desktop/Logo.svg" alt="">
+              <img src="img/header/header_desktop/logo.svg" alt="">
             </a>
 
             <div class="os_header_desktop_top_tel">
@@ -4412,7 +4412,7 @@
       $(window).scroll(function(){
         if($(document).width() < 767) {
           var offsetScroll = $(this).scrollTop();
-          var offsetNavBlog = $(".os_blog_main_block").offset().top;
+          var offsetNavBlog = $(".os_blog_main_block").offset().top - 75;
           if(offsetScroll > offsetNavBlog) {
             $(".os_navigation_blog").css("display", "block");
           } else {
