@@ -1,3 +1,11 @@
+@keyframes headerOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .os_header {
   &_mobile {
     background-color: #394a50;
@@ -666,6 +674,9 @@
         &.drop {
           & .os_header_desktop_bottom_catalog_drop {
             display: block;
+            animation: headerOpacity 0.2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
           }
           & .os_header_desktop_bottom_catalog_parent {
             background-color: #435c65;

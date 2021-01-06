@@ -110,6 +110,18 @@ div:focus {
     padding-right: 0px;
     padding-left: 0px; } }
 
+@-webkit-keyframes headerOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes headerOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .os_header_mobile {
   background-color: #394a50;
   -webkit-transition: all 0.2s linear;
@@ -843,7 +855,13 @@ div:focus {
   opacity: 0; }
 
 .os_header_desktop_bottom_catalog.drop .os_header_desktop_bottom_catalog_drop {
-  display: block; }
+  display: block;
+  -webkit-animation: headerOpacity 0.2s;
+  animation: headerOpacity 0.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
 
 .os_header_desktop_bottom_catalog.drop .os_header_desktop_bottom_catalog_parent {
   background-color: #435c65;
