@@ -61,6 +61,8 @@ $(document).ready(function () {
         $(".os_popup_menu").removeClass("active");
         $(".os_popup_order").removeClass("active");
         $(".os_popup_wait").removeClass("active");
+        $(".os_popup_send").removeClass("active");
+        $(".os_popup_send_maked").removeClass("active");
         $(".os_popup_under_order").removeClass("active");
         $(".os_popup_order_maked").removeClass("active");
         $(".os_popup_collection").removeClass("active");
@@ -3042,6 +3044,36 @@ $(document).ready(function () {
 
     $(".os_home_information_main_btns_hide").click(function() {
         $(".os_home_information_main").removeClass("open");
+    });
+
+    $("#sendEmail").click(function() {
+        $(".os_popup_send").addClass("active");
+        $(".os_back_modal").addClass("active");
+        $("body").addClass("stop_scrolling");
+    });
+
+    $(".os_popup_send form").submit(function() {
+        if($(this).find('input[type="email"]').val() == '' ) {
+            $(this).addClass("invalid");
+            return false;
+        } else {
+            $(".os_popup_send").removeClass("active");
+            $(".os_popup_send_maked").addClass("active");
+            $("body").addClass("stop_scrolling");
+            return false;
+        }
+    });
+
+    $(".os_popup_send_close").click(function() {
+        $(".os_popup_send").removeClass("active");
+        $(".os_back_modal").removeClass("active");
+        $("body").removeClass("stop_scrolling");
+    });
+
+    $(".os_popup_send_maked_close").click(function() {
+        $(".os_popup_send_maked").removeClass("active");
+        $(".os_back_modal").removeClass("active");
+        $("body").removeClass("stop_scrolling");
     });
 
     $(".os_checkout_content_main_left_method_pay_drop").overlayScrollbars({ });

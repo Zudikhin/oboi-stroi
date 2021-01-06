@@ -92,6 +92,14 @@
               margin-left: 16px;
               & li {
                 margin-top: 9px;
+                & button {
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: $blue-color;
+                  display: flex;
+                  align-items: center;
+                  background-color: transparent;
+                }
                 & a {
                   font-size: 14px;
                   line-height: 21px;

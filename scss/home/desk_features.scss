@@ -1,0 +1,42 @@
+.os_desk_features {
+    background-color: #fff;
+    padding-top: 16px;
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      padding-bottom: 16px;
+    }
+    &_list {
+      @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+      }
+      &_item {
+        display: flex;
+        align-items: flex-start;
+        width: calc(25% - 24px);
+        &_text {
+          margin-left: 16px;
+          & h5 {
+            font-family: "Roboto-Bold";
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+            & a {
+              font-family: "Roboto-Bold";
+              font-size: 14px;
+              line-height: 21px;
+              text-decoration-line: underline;
+              color: $black-color;
+            }
+          }
+          & p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $black-color;
+          }
+        }
+      }
+    }
+  }
+  

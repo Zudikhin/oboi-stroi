@@ -96,7 +96,7 @@
                   <ul class="os_ul">
                     <li><a class="os_a" href="#"><img src="img/cart/wup.svg" alt="">Поделиться в WhatsApp</a></li>
                     <li><a class="os_a" href="#"><img src="img/cart/link.svg" alt="">Скопировать ссылку</a></li>
-                    <li><a class="os_a" href="#"><img src="img/cart/mail.svg" alt="">Отправить на почту</a></li>
+                    <li><button id="sendEmail" class="os_button"><img src="img/cart/mail.svg" alt="">Отправить на почту</button></li>
                   </ul>
                 </div>
 
@@ -2743,6 +2743,24 @@
 
     <div class="os_back_modal_second">
       <button class="os_button os_back_modal_second_close"><img src="img/close.svg" alt=""></button>
+    </div>
+
+    <div class="os_popup_send">
+      <h4 class="os_h">Отправить список на почту</h4>
+      <button class="os_button os_popup_send_close"><img src="img/close-gray.svg" alt=""></button>
+      <form action="">
+        <label>
+          <span class="os_span">E-mail</span>
+          <input class="os_input" type="email">
+        </label>
+        <button class="os_button" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div class="os_popup_send_maked">
+      <h4 class="os_h">Отправить список на почту</h4>
+      <button class="os_button os_popup_send_maked_close"><img src="img/close-gray.svg" alt=""></button>
+      <p class="os_p">Список товаров отправлен на mngfght@gmail.com</p>
     </div>
 
 
