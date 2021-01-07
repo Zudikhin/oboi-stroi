@@ -14140,12 +14140,21 @@ div:focus {
   -ms-flex-align: center;
   align-items: center; }
 
-.os_product_main_title_info_rating fieldset label {
+.os_product_main_title_info_rating fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.os_product_main_title_info_rating fieldset div label {
   position: relative;
   width: 16px;
   height: 16px; }
 
-.os_product_main_title_info_rating fieldset label:before {
+.os_product_main_title_info_rating fieldset div label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -14156,7 +14165,7 @@ div:focus {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.os_product_main_title_info_rating fieldset label.full:before {
+.os_product_main_title_info_rating fieldset div label.full:before {
   background: url(../../img/review/icon_feedback_full.svg); }
 
 .os_product_main_title_info_rating span {
@@ -16772,6 +16781,15 @@ div:focus {
   display: flex;
   padding: 0;
   margin: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.os_product_review_list_item_header fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -25711,13 +25729,22 @@ div:focus {
   margin-top: 8px;
   cursor: pointer; }
 
-.os_popup_review_form form fieldset label {
+.os_popup_review_form form fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.os_popup_review_form form fieldset div label {
   cursor: pointer; }
 
-.os_popup_review_form form fieldset > input {
+.os_popup_review_form form fieldset div > input {
   display: none; }
 
-.os_popup_review_form form fieldset > label:before {
+.os_popup_review_form form fieldset div > label:before {
   content: "";
   background: url(../../img/review/icon_popup_empty_star.png);
   width: 32px;
@@ -25726,7 +25753,7 @@ div:focus {
   background-size: 100%;
   background-repeat: no-repeat; }
 
-.os_popup_review_form form fieldset > input:checked ~ label:before {
+.os_popup_review_form form fieldset div > input:checked ~ label:before {
   content: "";
   background: url(../../img/review/icon_popup_star.png);
   width: 32px;

@@ -3623,29 +3623,33 @@
         margin: 0;
         margin-top: 8px;
         cursor: pointer;
-        & label {
-          cursor: pointer;
-        }
-        & > input {
-          display: none;
-        }
-        & > label:before {
-          content: "";
-          background: url(../../img/review/icon_popup_empty_star.png);
-          width: 32px;
-          height: 32px;
-          display: block;
-          background-size: 100%;
-          background-repeat: no-repeat;
-        }
-        & > input:checked ~ label:before {
-          content: "";
-          background: url(../../img/review/icon_popup_star.png);
-          width: 32px;
-          height: 32px;
-          display: block;
-          background-size: 100%;
-          background-repeat: no-repeat;
+        & div {
+          display: flex;
+          flex-direction: row-reverse;
+          & label {
+            cursor: pointer;
+          }
+          & > input {
+            display: none;
+          }
+          & > label:before {
+            content: "";
+            background: url(../../img/review/icon_popup_empty_star.png);
+            width: 32px;
+            height: 32px;
+            display: block;
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
+          & > input:checked ~ label:before {
+            content: "";
+            background: url(../../img/review/icon_popup_star.png);
+            width: 32px;
+            height: 32px;
+            display: block;
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
         }
       }
     }

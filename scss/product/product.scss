@@ -28,24 +28,28 @@
             margin: 0;
             flex-direction: row;
             align-items: center;
-            & label {
-              position: relative;
-              width: 16px;
-              height: 16px;
-              &:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background: url(../../img/review/icon_feedback_empty.svg);
-                background-repeat: no-repeat;
-                background-size: cover;
-              }
-              &.full {
+            & div {
+              display: flex;
+              flex-direction: row;
+              & label {
+                position: relative;
+                width: 16px;
+                height: 16px;
                 &:before {
-                  background: url(../../img/review/icon_feedback_full.svg);
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: url(../../img/review/icon_feedback_empty.svg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+                &.full {
+                  &:before {
+                    background: url(../../img/review/icon_feedback_full.svg);
+                  }
                 }
               }
             }
