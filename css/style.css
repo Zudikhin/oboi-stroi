@@ -14004,12 +14004,21 @@ div:focus {
   -ms-flex-direction: row;
   flex-direction: row; }
 
-.os_reviews_main_block_feedback_list_item_header fieldset label {
+.os_reviews_main_block_feedback_list_item_header fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.os_reviews_main_block_feedback_list_item_header fieldset div label {
   position: relative;
   width: 16px;
   height: 16px; }
 
-.os_reviews_main_block_feedback_list_item_header fieldset label:before {
+.os_reviews_main_block_feedback_list_item_header fieldset div label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -14020,7 +14029,7 @@ div:focus {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.os_reviews_main_block_feedback_list_item_header fieldset label.full:before {
+.os_reviews_main_block_feedback_list_item_header fieldset div label.full:before {
   background: url(../../img/review/icon_feedback_full.svg); }
 
 .os_reviews_main_block_feedback_list_item_date {
@@ -14204,7 +14213,7 @@ div:focus {
 
 @media (min-width: 1024px) {
   .os_product_main_content_slider {
-    position: sticky;
+    position: relative;
     top: 70px;
     margin-top: 16px;
     width: calc(50% - 144px); } }
