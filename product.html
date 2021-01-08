@@ -7337,6 +7337,22 @@
       var widthProductSLide = $(".os_product_main_content_img").width();
       $(".os_product_main_content_img").height(widthProductSLide);
     </script>
+
+    <script>
+      // $('body').bind('mousewheel', function(e) {
+      //   console.log("lol");
+      //   $(".os_product_main_content_slider").css("position", "sticky");
+      //   $(".os_product_main_content_img").css("position", "sticky");
+      // });
+
+      $(window).bind('mousewheel DOMMouseScroll', function(event){
+        $(".os_product_main_content_slider").addClass("sticky");
+        $(".os_product_main_content_img").addClass("sticky");
+        $(".os_product_main_content_slider").css("top", "70px");
+        $(".os_product_main_content_img").css("top", "70px");
+      });
+
+    </script>
    
   </body>
 </html>

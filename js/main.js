@@ -2222,21 +2222,31 @@ $(document).ready(function () {
     });
   
      $(".os_product_main_title_info_rating").click(function() {
+        var offset = $(".os_product_main_content_img").position().top - 62;
+        $(".os_product_main_content_slider").removeClass("sticky");
+        $(".os_product_main_content_img").removeClass("sticky");
+        $(".os_product_main_content_slider").css("top", offset);
+        $(".os_product_main_content_img").css("top", offset);
         $('html, body').animate({
             scrollTop: $(".os_product_review").offset().top}, 2000);
      });
 
     $(".os_product_main_content_text_block_all_characteristic").click(function() {
+        var offset = $(".os_product_main_content_img").position().top - 62;
+        $(".os_product_main_content_slider").removeClass("sticky");
+        $(".os_product_main_content_img").removeClass("sticky");
+        $(".os_product_main_content_slider").css("top", offset);
+        $(".os_product_main_content_img").css("top", offset);
         $('html, body').animate({
             scrollTop: $(".os_specifications_main").offset().top}, 2000);
     });
 
-    // $(".os_product_main_content_text_block_all_characteristic").click(function() {
-    //     $('html, body').animate({
-    //         scrollTop: $(".os_specifications_main_default").offset().top - $(window).height() / 2}, 2000);
-    // });
-
     $(".os_product_main_content_text_other_ways").click(function() {
+        var offset = $(".os_product_main_content_img").position().top - 62;
+        $(".os_product_main_content_slider").removeClass("sticky");
+        $(".os_product_main_content_img").removeClass("sticky");
+        $(".os_product_main_content_slider").css("top", offset);
+        $(".os_product_main_content_img").css("top", offset);
         $('html, body').animate({
             scrollTop: $(".os_desktop_product_info").offset().top }, 2000);
         $(".os_desktop_product_info_main_top_item").removeClass("active");
