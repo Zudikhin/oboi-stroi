@@ -830,8 +830,7 @@ $(document).ready(function () {
 
     $(".os_brands_block_anchors_list_item").click(function() {
         var target = $(this).attr("data-target");
-        $('html, body').animate({
-            scrollTop: $(`#${target}`).offset().top}, 1500);
+        $('html, body').animate({ scrollTop: $(`#${target}`).offset().top - 65}, 1500);
     });
 
     $('.os_shop_content_block_sidebar input').change(function() {
@@ -1238,7 +1237,7 @@ $(document).ready(function () {
     $(".os_delivery_main_block_options_item").click(function() {
         var target = $(this).attr("data-target");
         $('html, body').animate({
-            scrollTop: $(`#${target}`).offset().top - 56}, 1500);
+            scrollTop: $(`#${target}`).offset().top - 65}, 1500);
     });
 
     $(".os_return_main_block_proper_btns_show").click(function() {
@@ -2227,8 +2226,15 @@ $(document).ready(function () {
         $(".os_product_main_content_img").removeClass("sticky");
         $(".os_product_main_content_slider").css("top", offset);
         $(".os_product_main_content_img").css("top", offset);
-        $('html, body').animate({
-            scrollTop: $(".os_product_review").offset().top}, 2000);
+        if($(document).width() < 1025) {
+            $('html, body').animate({
+                scrollTop: $(".os_product_review").offset().top - 65}, 2000);
+        } else {
+            $('html, body').animate({
+                scrollTop: $(".os_product_review").offset().top - 25}, 2000);
+        }
+        
+        
      });
 
     $(".os_product_main_content_text_block_all_characteristic").click(function() {
@@ -2238,7 +2244,7 @@ $(document).ready(function () {
         $(".os_product_main_content_slider").css("top", offset);
         $(".os_product_main_content_img").css("top", offset);
         $('html, body').animate({
-            scrollTop: $(".os_specifications_main").offset().top}, 2000);
+            scrollTop: $(".os_specifications_main").offset().top - 25}, 2000);
     });
 
     $(".os_product_main_content_text_other_ways").click(function() {
@@ -2248,7 +2254,7 @@ $(document).ready(function () {
         $(".os_product_main_content_slider").css("top", offset);
         $(".os_product_main_content_img").css("top", offset);
         $('html, body').animate({
-            scrollTop: $(".os_desktop_product_info").offset().top }, 2000);
+            scrollTop: $(".os_desktop_product_info").offset().top - 25 }, 2000);
         $(".os_desktop_product_info_main_top_item").removeClass("active");
         $("#desktopDelivery").addClass("active");
         $(".os_desktop_product_info_main_block_item").removeClass("active");

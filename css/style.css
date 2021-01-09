@@ -928,6 +928,10 @@ div:focus {
 
 @media (min-width: 1366px) {
   .os_header_desktop_bottom_item {
+    margin-right: 30px; } }
+
+@media (min-width: 1400px) {
+  .os_header_desktop_bottom_item {
     margin-right: 32px; } }
 
 .os_header_desktop_bottom_item a {
@@ -23960,7 +23964,8 @@ div:focus {
   color: #29c1d4;
   position: relative;
   padding-left: 16px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  padding-right: 16px; }
 
 .os_popup_calculation_header h4:before {
   content: "";
@@ -26529,7 +26534,8 @@ div:focus {
   line-height: 24px;
   color: #29c1d4;
   margin-top: 10px;
-  padding-left: 16px; }
+  padding-left: 16px;
+  padding-right: 16px; }
 
 .os_popup_send h4:after {
   content: "";
@@ -26683,7 +26689,8 @@ div:focus {
   line-height: 24px;
   color: #29c1d4;
   margin-top: 16px;
-  padding-left: 16px; }
+  padding-left: 16px;
+  padding-right: 16px; }
 
 .os_popup_send_maked h4:after {
   content: "";
